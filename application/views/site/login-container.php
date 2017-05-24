@@ -9,7 +9,15 @@
                                     <div class="page-title">
                                         <h1>Login or Create an Account</h1>
                                     </div>
-                                    <form action="http://alothemes.com/demo/supermarket/index.php/customer/account/loginPost/" method="post" id="login-form">
+                                    <?php 
+                                    if(!empty($message)) {
+                                        echo '<ul class="messages">
+                                            '.(isset($message['success']) ? '<li class="success-msg"><ul><li><span>'.$message['success'].'</span></li>' : '
+                                            <li class="error-msg"><ul><li><span>'.$message['error'].'</span></li></ul></li>').'
+                                            </ul></li></ul>';
+                                        } 
+                                    ?>
+                                    <form action="customer/account/loginPost/" method="post" id="login-form">
                                         <input name="form_key" type="hidden" value="IkRCx1boepCUnqIN" />
                                         <div class="col2-set">
                                             <div class="col-1 new-users">
@@ -18,7 +26,7 @@
                                                     <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more. </p>
                                                     <div class="col-1-1 new-users">
                                                         <div class="buttons-set">
-                                                            <button type="button" title="Create an Account" class="button" onclick="window.location='http://alothemes.com/demo/supermarket/index.php/customer/account/create/';"><span><span>Create an Account</span></span></button>
+                                                            <button type="button" title="Create an Account" class="button" onclick="window.location='customer/account/create/';"><span><span>Create an Account</span></span></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -84,7 +92,7 @@
                                                     </script>
                                                     <div class="col-2-2 registered-users">
                                                         <div class="buttons-set">
-                                                            <a href="http://alothemes.com/demo/supermarket/index.php/customer/account/forgotpassword/" class="f-left">Forgot Your Password?</a>
+                                                            <a href="customer/account/forgotpassword/" class="f-left">Forgot Your Password?</a>
                                                             <button type="submit" class="button" title="Login" name="send" id="send2"><span><span>Login</span></span></button>
                                                         </div>
                                                     </div>

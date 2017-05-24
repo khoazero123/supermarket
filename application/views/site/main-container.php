@@ -133,7 +133,7 @@
                             
                                 <div class="block block-subscribe popup" style="display:none;">
                                     <div id="popup-newsletter">
-                                        <form action="http://alothemes.com/demo/supermarket/index.php/newsletter/subscriber/new/" method="post" id="popup-newsletter-validate-detail">
+                                        <form action="newsletter/subscriber/new/" method="post" id="popup-newsletter-validate-detail">
                                             <div class="block-content">
                                                 <div class="form-subscribe-header block-title">
                                                     <label>Enter Your Email Below to activate your</label>
@@ -247,8 +247,8 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ajax_loading" style="display:none" data-url="http://alothemes.com/demo/supermarket/index.php/magiccategory/index/ajax/">
-                                                <img src="http://alothemes.com/demo/supermarket/skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
+                                            <div class="ajax_loading" style="display:none" data-url="magiccategory/index/ajax/">
+                                                <img src="skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
                                             </div>
 
                                             <div class="box-product-content clearfix">
@@ -262,7 +262,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone" class="product-image">
+                                                                                <a href="accessories/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/4/_/4_3.jpg" width="235" height="270" alt="Samsung Galaxy Smartphone" />
                                 
                                                                         <span class="product-img-back">
@@ -275,7 +275,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone">Samsung Galaxy Smartphone</a>
+                                                                                    <a href="accessories/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone">Samsung Galaxy Smartphone</a>
                                                                                 </h2>
 
 
@@ -290,18 +290,18 @@
                                                                                     <div class="rating-box">
                                                                                         <div class="rating" style="width:60%"></div>
                                                                                     </div>
-                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/4/'; return false;">1 Review(s)</a></span>
+                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/4/'; return false;">1 Review(s)</a></span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="actions-no hover-box">
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/4/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/4/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/4/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/4/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/4/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/4/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -316,7 +316,7 @@
                                                                         <span class="sticker top-right"><span class="labelsale">-43%</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/tier-pricing-product.html" title="Tier Pricing Product" class="product-image">
+                                                                                <a href="accessories/tier-pricing-product.html" title="Tier Pricing Product" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/0/10_8.jpg" width="235" height="270" alt="Tier Pricing Product" />
                                 
                                                                         <span class="product-img-back">
@@ -329,7 +329,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/tier-pricing-product.html" title="Tier Pricing Product">Tier Pricing Product</a>
+                                                                                    <a href="accessories/tier-pricing-product.html" title="Tier Pricing Product">Tier Pricing Product</a>
                                                                                 </h2>
 
 
@@ -356,11 +356,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/43/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/43/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/43/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/43/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/43/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/43/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -375,7 +375,7 @@
                                                                         <span class="sticker top-right"><span class="labelsale">-72%</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/fusce-nec-facilisi.html" title="Fusce nec facilisi" class="product-image">
+                                                                                <a href="accessories/fusce-nec-facilisi.html" title="Fusce nec facilisi" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/5/_/5_34.jpg" width="235" height="270" alt="Fusce nec facilisi" />
                                 
                                                                         <span class="product-img-back">
@@ -388,7 +388,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/fusce-nec-facilisi.html" title="Fusce nec facilisi">Fusce nec facilisi</a>
+                                                                                    <a href="accessories/fusce-nec-facilisi.html" title="Fusce nec facilisi">Fusce nec facilisi</a>
                                                                                 </h2>
 
 
@@ -415,11 +415,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/46/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/46/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/46/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/46/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/46/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/46/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -434,7 +434,7 @@
                                                                         <span class="sticker top-right"><span class="labelsale">-72%</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/donec-sem-tellus.html" title="Donec sem tellus" class="product-image">
+                                                                                <a href="accessories/donec-sem-tellus.html" title="Donec sem tellus" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/1/11_7.jpg" width="235" height="270" alt="Donec sem tellus" />
                                 
                                                                         <span class="product-img-back">
@@ -447,7 +447,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/donec-sem-tellus.html" title="Donec sem tellus">Donec sem tellus</a>
+                                                                                    <a href="accessories/donec-sem-tellus.html" title="Donec sem tellus">Donec sem tellus</a>
                                                                                 </h2>
 
 
@@ -474,11 +474,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/47/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/47/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/47/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/47/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/47/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/47/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -492,7 +492,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/configurable-product.html" title="Configurable Product" class="product-image">
+                                                                                <a href="accessories/configurable-product.html" title="Configurable Product" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1_16.jpg" width="235" height="270" alt="Configurable Product" />
                                 
                                                                         <span class="product-img-back">
@@ -505,7 +505,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/configurable-product.html" title="Configurable Product">Configurable Product</a>
+                                                                                    <a href="accessories/configurable-product.html" title="Configurable Product">Configurable Product</a>
                                                                                 </h2>
 
 
@@ -520,18 +520,18 @@
                                                                                     <div class="rating-box">
                                                                                         <div class="rating" style="width:60%"></div>
                                                                                     </div>
-                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/41/'; return false;">2 Review(s)</a></span>
+                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/41/'; return false;">2 Review(s)</a></span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="actions-no hover-box">
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/accessories/configurable-product.html')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('accessories/configurable-product.html')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/41/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/41/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/41/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/41/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -545,7 +545,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/carara-daniel-watch.html" title="Carara Daniel Watch" class="product-image">
+                                                                                <a href="accessories/carara-daniel-watch.html" title="Carara Daniel Watch" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1_12.jpg" width="235" height="270" alt="Carara Daniel Watch" />
                                 
                                                                         <span class="product-img-back">
@@ -558,7 +558,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/carara-daniel-watch.html" title="Carara Daniel Watch">Carara Daniel Watch</a>
+                                                                                    <a href="accessories/carara-daniel-watch.html" title="Carara Daniel Watch">Carara Daniel Watch</a>
                                                                                 </h2>
 
 
@@ -573,18 +573,18 @@
                                                                                     <div class="rating-box">
                                                                                         <div class="rating" style="width:40%"></div>
                                                                                     </div>
-                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/26/'; return false;">1 Review(s)</a></span>
+                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/26/'; return false;">1 Review(s)</a></span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="actions-no hover-box">
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/26/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/26/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/26/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/26/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/26/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/26/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -598,7 +598,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/lipstick-true-colour.html" title="Lipstick - True Colour" class="product-image">
+                                                                                <a href="accessories/lipstick-true-colour.html" title="Lipstick - True Colour" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/4/_/4_16.jpg" width="235" height="270" alt="Lipstick - True Colour" />
                                 
                                                                         <span class="product-img-back">
@@ -611,7 +611,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/lipstick-true-colour.html" title="Lipstick - True Colour">Lipstick - True Colour</a>
+                                                                                    <a href="accessories/lipstick-true-colour.html" title="Lipstick - True Colour">Lipstick - True Colour</a>
                                                                                 </h2>
 
 
@@ -626,18 +626,18 @@
                                                                                     <div class="rating-box">
                                                                                         <div class="rating" style="width:80%"></div>
                                                                                     </div>
-                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/23/'; return false;">1 Review(s)</a></span>
+                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/23/'; return false;">1 Review(s)</a></span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="actions-no hover-box">
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/23/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/23/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/23/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/23/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/23/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/23/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -651,7 +651,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/night-brid-bag-charm.html" title="Night Brid Bag Charm" class="product-image">
+                                                                                <a href="accessories/night-brid-bag-charm.html" title="Night Brid Bag Charm" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/5/_/5_15.jpg" width="235" height="270" alt="Night Brid Bag Charm" />
                                 
                                                                         <span class="product-img-back">
@@ -664,7 +664,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/night-brid-bag-charm.html" title="Night Brid Bag Charm">Night Brid Bag Charm</a>
+                                                                                    <a href="accessories/night-brid-bag-charm.html" title="Night Brid Bag Charm">Night Brid Bag Charm</a>
                                                                                 </h2>
 
 
@@ -680,11 +680,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/22/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/22/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/22/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/22/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/22/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/22/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -698,7 +698,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/acne-studios-silver.html" title="Acne Studios -  Silver" class="product-image">
+                                                                                <a href="accessories/acne-studios-silver.html" title="Acne Studios -  Silver" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/6/_/6_9.jpg" width="235" height="270" alt="Acne Studios -  Silver" />
                                 
                                                                         <span class="product-img-back">
@@ -711,7 +711,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/acne-studios-silver.html" title="Acne Studios -  Silver">Acne Studios -  Silver</a>
+                                                                                    <a href="accessories/acne-studios-silver.html" title="Acne Studios -  Silver">Acne Studios -  Silver</a>
                                                                                 </h2>
 
 
@@ -727,11 +727,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/21/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/21/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/21/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/21/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/21/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/21/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -745,7 +745,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories/the-best-android-phone.html" title="The Best Android Phone" class="product-image">
+                                                                                <a href="accessories/the-best-android-phone.html" title="The Best Android Phone" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1.jpg" width="235" height="270" alt="The Best Android Phone" />
                                 
                                                                         <span class="product-img-back">
@@ -758,7 +758,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/accessories/the-best-android-phone.html" title="The Best Android Phone">The Best Android Phone</a>
+                                                                                    <a href="accessories/the-best-android-phone.html" title="The Best Android Phone">The Best Android Phone</a>
                                                                                 </h2>
 
 
@@ -774,11 +774,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/1/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/1/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/1/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/1/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/1/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -837,7 +837,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ajax_loading" style="display:none" data-url="http://alothemes.com/demo/supermarket/index.php/magiccategory/index/ajax2/">
+                                            <div class="ajax_loading" style="display:none" data-url="magiccategory/index/ajax2/">
                                                 <img src="http://alothemes.com/demo/supermarket/skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
                                             </div>
 
@@ -984,7 +984,7 @@
                                                                         <span class="sticker top-left"><span class="labelnew">New</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/lorem-ipsum-dolor-sit-amet.html" title="Lorem ipsum dolor sit amet" class="product-image">
+                                                                                <a href="smartphone/lorem-ipsum-dolor-sit-amet.html" title="Lorem ipsum dolor sit amet" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/7/_/7_21.jpg" width="235" height="270" alt="Lorem ipsum dolor sit amet" />
                                 
                                                                         <span class="product-img-back">
@@ -997,7 +997,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/lorem-ipsum-dolor-sit-amet.html" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
+                                                                                    <a href="smartphone/lorem-ipsum-dolor-sit-amet.html" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
                                                                                 </h2>
 
 
@@ -1013,11 +1013,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/49/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/49/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/49/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/49/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/49/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/49/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1032,7 +1032,7 @@
                                                                         <span class="sticker top-right"><span class="labelsale">-67%</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/wave-ripped-straight.html" title="Wave Ripped Straight" class="product-image">
+                                                                                <a href="smartphone/wave-ripped-straight.html" title="Wave Ripped Straight" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/8/_/8_17.jpg" width="235" height="270" alt="Wave Ripped Straight" />
                                 
                                                                         <span class="product-img-back">
@@ -1045,7 +1045,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/wave-ripped-straight.html" title="Wave Ripped Straight">Wave Ripped Straight</a>
+                                                                                    <a href="smartphone/wave-ripped-straight.html" title="Wave Ripped Straight">Wave Ripped Straight</a>
                                                                                 </h2>
 
 
@@ -1072,11 +1072,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/48/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/48')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/48/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/48/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/48" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/48" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1091,7 +1091,7 @@
                                                                         <span class="sticker top-right"><span class="labelsale">-72%</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/donec-sem-tellus.html" title="Donec sem tellus" class="product-image">
+                                                                                <a href="smartphone/donec-sem-tellus.html" title="Donec sem tellus" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/1/11_7.jpg" width="235" height="270" alt="Donec sem tellus" />
                                 
                                                                         <span class="product-img-back">
@@ -1104,7 +1104,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/donec-sem-tellus.html" title="Donec sem tellus">Donec sem tellus</a>
+                                                                                    <a href="smartphone/donec-sem-tellus.html" title="Donec sem tellus">Donec sem tellus</a>
                                                                                 </h2>
 
 
@@ -1131,11 +1131,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/47/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/47/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/47/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/47/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/47/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/47/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1150,7 +1150,7 @@
                                                                         <span class="sticker top-right"><span class="labelsale">-43%</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/tier-pricing-product.html" title="Tier Pricing Product" class="product-image">
+                                                                                <a href="smartphone/tier-pricing-product.html" title="Tier Pricing Product" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/0/10_8.jpg" width="235" height="270" alt="Tier Pricing Product" />
                                 
                                                                         <span class="product-img-back">
@@ -1163,7 +1163,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/tier-pricing-product.html" title="Tier Pricing Product">Tier Pricing Product</a>
+                                                                                    <a href="smartphone/tier-pricing-product.html" title="Tier Pricing Product">Tier Pricing Product</a>
                                                                                 </h2>
 
 
@@ -1190,11 +1190,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/43/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/43/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/43/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/43/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/43/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/43/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1209,7 +1209,7 @@
                                                                         <span class="sticker top-left"><span class="labelnew">New</span></span>
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/grouped-product.html" title="Grouped Product" class="product-image">
+                                                                                <a href="smartphone/grouped-product.html" title="Grouped Product" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1_17.jpg" width="235" height="270" alt="Grouped Product" />
                                 
                                                                         <span class="product-img-back">
@@ -1222,7 +1222,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/grouped-product.html" title="Grouped Product">Grouped Product</a>
+                                                                                    <a href="smartphone/grouped-product.html" title="Grouped Product">Grouped Product</a>
                                                                                 </h2>
 
 
@@ -1237,18 +1237,18 @@
                                                                                     <div class="rating-box">
                                                                                         <div class="rating" style="width:60%"></div>
                                                                                     </div>
-                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/42/'; return false;">1 Review(s)</a></span>
+                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/42/'; return false;">1 Review(s)</a></span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="actions-no hover-box">
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/42/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/42/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/42/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/42/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/42/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/42/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1262,7 +1262,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone" class="product-image">
+                                                                                <a href="smartphone/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/4/_/4_3.jpg" width="235" height="270" alt="Samsung Galaxy Smartphone" />
                                 
                                                                         <span class="product-img-back">
@@ -1275,7 +1275,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone">Samsung Galaxy Smartphone</a>
+                                                                                    <a href="smartphone/samsung-galaxy-smartphone.html" title="Samsung Galaxy Smartphone">Samsung Galaxy Smartphone</a>
                                                                                 </h2>
 
 
@@ -1290,18 +1290,18 @@
                                                                                     <div class="rating-box">
                                                                                         <div class="rating" style="width:60%"></div>
                                                                                     </div>
-                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/4/'; return false;">1 Review(s)</a></span>
+                                                                                    <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/4/'; return false;">1 Review(s)</a></span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="actions-no hover-box">
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/4/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/4/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/4/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/4/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/4/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/4/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1315,7 +1315,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/apple-iphone-6-64gb-silver.html" title="Apple iPhone 6 - 64GB - Silver" class="product-image">
+                                                                                <a href="smartphone/apple-iphone-6-64gb-silver.html" title="Apple iPhone 6 - 64GB - Silver" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/3/_/3_2.jpg" width="235" height="270" alt="Apple iPhone 6 - 64GB - Silver" />
                                 
                                                                         <span class="product-img-back">
@@ -1328,7 +1328,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/apple-iphone-6-64gb-silver.html" title="Apple iPhone 6 - 64GB - Silver">Apple iPhone 6 - 64GB - Silver</a>
+                                                                                    <a href="smartphone/apple-iphone-6-64gb-silver.html" title="Apple iPhone 6 - 64GB - Silver">Apple iPhone 6 - 64GB - Silver</a>
                                                                                 </h2>
 
 
@@ -1344,11 +1344,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/3/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/3/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/3/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/3/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/3/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/3/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1362,7 +1362,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/martphone-and-tablet.html" title="martphone And Tablet" class="product-image">
+                                                                                <a href="smartphone/martphone-and-tablet.html" title="martphone And Tablet" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/2/_/2_1.jpg" width="235" height="270" alt="martphone And Tablet" />
                                 
                                                                         <span class="product-img-back">
@@ -1375,7 +1375,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/martphone-and-tablet.html" title="martphone And Tablet">martphone And Tablet</a>
+                                                                                    <a href="smartphone/martphone-and-tablet.html" title="martphone And Tablet">martphone And Tablet</a>
                                                                                 </h2>
 
 
@@ -1391,11 +1391,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/2/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/2/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/2/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/2/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/2/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/2/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1409,7 +1409,7 @@
                                                                     <div class="per-product">
                                                                         <div class="images-container">
                                                                             <div class="product-hover">
-                                                                                <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/the-best-android-phone.html" title="The Best Android Phone" class="product-image">
+                                                                                <a href="smartphone/the-best-android-phone.html" title="The Best Android Phone" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1.jpg" width="235" height="270" alt="The Best Android Phone" />
                                 
                                                                         <span class="product-img-back">
@@ -1422,7 +1422,7 @@
                                                                             </div>
                                                                             <div class="products-textlink clearfix">
                                                                                 <h2 class="product-name">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/smartphone/the-best-android-phone.html" title="The Best Android Phone">The Best Android Phone</a>
+                                                                                    <a href="smartphone/the-best-android-phone.html" title="The Best Android Phone">The Best Android Phone</a>
                                                                                 </h2>
 
 
@@ -1438,11 +1438,11 @@
                                                                                 <div class="actions clearfix">
                                                                                     <div class="show-box">
                                                                                         <div class="actions-cart">
-                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/1/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/1/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                         </div>
                                                                                         <ul class="add-to-links">
-                                                                                            <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/1/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/1/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                            <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/1/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                            <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/1/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -1510,7 +1510,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ajax_loading" style="display:none" data-url="http://alothemes.com/demo/supermarket/index.php/magiccategory/index/ajax2/">
+                                            <div class="ajax_loading" style="display:none" data-url="magiccategory/index/ajax2/">
                                                 <img src="http://alothemes.com/demo/supermarket/skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
                                             </div>
 
@@ -1701,7 +1701,7 @@
                                                                             <span class="sticker top-left"><span class="labelnew">New</span></span>
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/high-spray-in-pearl-grey.html" title="High Spray in Pearl Grey" class="product-image">
+                                                                                    <a href="televisions-monitor/high-spray-in-pearl-grey.html" title="High Spray in Pearl Grey" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/8/_/8_14.jpg" width="235" height="270" alt="High Spray in Pearl Grey" />
                                 
                                                                         <span class="product-img-back">
@@ -1714,7 +1714,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/high-spray-in-pearl-grey.html" title="High Spray in Pearl Grey">High Spray in Pearl Grey</a>
+                                                                                        <a href="televisions-monitor/high-spray-in-pearl-grey.html" title="High Spray in Pearl Grey">High Spray in Pearl Grey</a>
                                                                                     </h2>
 
 
@@ -1730,11 +1730,11 @@
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/45/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/45/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/45/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/45/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/45/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/45/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -1748,7 +1748,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/primo-court-mid-suede.html" title="Primo Court Mid Suede" class="product-image">
+                                                                                    <a href="televisions-monitor/primo-court-mid-suede.html" title="Primo Court Mid Suede" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/7/_/7_17.jpg" width="235" height="270" alt="Primo Court Mid Suede" />
                                 
                                                                         <span class="product-img-back">
@@ -1761,7 +1761,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/primo-court-mid-suede.html" title="Primo Court Mid Suede">Primo Court Mid Suede</a>
+                                                                                        <a href="televisions-monitor/primo-court-mid-suede.html" title="Primo Court Mid Suede">Primo Court Mid Suede</a>
                                                                                     </h2>
 
 
@@ -1777,11 +1777,11 @@
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/44/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/44/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/44/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/44/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/44/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/44/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -1798,7 +1798,7 @@
                                                                             <span class="sticker top-left"><span class="labelnew">New</span></span>
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/grouped-product.html" title="Grouped Product" class="product-image">
+                                                                                    <a href="televisions-monitor/grouped-product.html" title="Grouped Product" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1_17.jpg" width="235" height="270" alt="Grouped Product" />
                                 
                                                                         <span class="product-img-back">
@@ -1811,7 +1811,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/grouped-product.html" title="Grouped Product">Grouped Product</a>
+                                                                                        <a href="televisions-monitor/grouped-product.html" title="Grouped Product">Grouped Product</a>
                                                                                     </h2>
 
 
@@ -1826,18 +1826,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:60%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/42/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/42/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/42/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/42/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/42/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/42/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/42/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/42/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -1852,7 +1852,7 @@
                                                                             <span class="sticker top-right"><span class="labelsale">-30%</span></span>
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/smart-tv-lc-50n6000u-new.html" title="Smart TV LC-50N6000U New" class="product-image">
+                                                                                    <a href="televisions-monitor/smart-tv-lc-50n6000u-new.html" title="Smart TV LC-50N6000U New" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/0/10_1.jpg" width="235" height="270" alt="Smart TV LC-50N6000U New" />
                                 
                                                                         <span class="product-img-back">
@@ -1865,7 +1865,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/smart-tv-lc-50n6000u-new.html" title="Smart TV LC-50N6000U New">Smart TV LC-50N6000U New</a>
+                                                                                        <a href="televisions-monitor/smart-tv-lc-50n6000u-new.html" title="Smart TV LC-50N6000U New">Smart TV LC-50N6000U New</a>
                                                                                     </h2>
 
 
@@ -1892,11 +1892,11 @@
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/14/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/14/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/14/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/14/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/14/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/14/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -1913,7 +1913,7 @@
                                                                             <span class="sticker top-right"><span class="labelsale">-45%</span></span>
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-50-class-aquos-4k.html" title="Sharp 50&quot; Class AQUOS 4K " class="product-image">
+                                                                                    <a href="televisions-monitor/sharp-50-class-aquos-4k.html" title="Sharp 50&quot; Class AQUOS 4K " class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/9/_/9_5.jpg" width="235" height="270" alt="Sharp 50&quot; Class AQUOS 4K " />
                                 
                                                                         <span class="product-img-back">
@@ -1926,7 +1926,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-50-class-aquos-4k.html" title="Sharp 50&quot; Class AQUOS 4K ">Sharp 50&quot; Class AQUOS 4K </a>
+                                                                                        <a href="televisions-monitor/sharp-50-class-aquos-4k.html" title="Sharp 50&quot; Class AQUOS 4K ">Sharp 50&quot; Class AQUOS 4K </a>
                                                                                     </h2>
 
 
@@ -1952,18 +1952,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:60%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/13/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/13/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/13/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/13/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/13/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/13/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/13/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/13/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -1977,7 +1977,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/ultra-hd-2160p-120hz-smart.html" title=" Ultra HD 2160p 120Hz Smart" class="product-image">
+                                                                                    <a href="televisions-monitor/ultra-hd-2160p-120hz-smart.html" title=" Ultra HD 2160p 120Hz Smart" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/8/_/8_6.jpg" width="235" height="270" alt=" Ultra HD 2160p 120Hz Smart" />
                                 
                                                                         <span class="product-img-back">
@@ -1990,7 +1990,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/ultra-hd-2160p-120hz-smart.html" title=" Ultra HD 2160p 120Hz Smart"> Ultra HD 2160p 120Hz Smart</a>
+                                                                                        <a href="televisions-monitor/ultra-hd-2160p-120hz-smart.html" title=" Ultra HD 2160p 120Hz Smart"> Ultra HD 2160p 120Hz Smart</a>
                                                                                     </h2>
 
 
@@ -2005,18 +2005,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:80%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/12/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/12/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/12/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/12/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/12/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/12/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/12/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/12/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2033,7 +2033,7 @@
                                                                             <span class="sticker top-left"><span class="labelnew">New</span></span>
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-ultral-smart-tv-58d.html" title="Sharp Ultral Smart TV 58D" class="product-image">
+                                                                                    <a href="televisions-monitor/sharp-ultral-smart-tv-58d.html" title="Sharp Ultral Smart TV 58D" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/7/_/7_7.jpg" width="235" height="270" alt="Sharp Ultral Smart TV 58D" />
                                 
                                                                         <span class="product-img-back">
@@ -2046,7 +2046,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-ultral-smart-tv-58d.html" title="Sharp Ultral Smart TV 58D">Sharp Ultral Smart TV 58D</a>
+                                                                                        <a href="televisions-monitor/sharp-ultral-smart-tv-58d.html" title="Sharp Ultral Smart TV 58D">Sharp Ultral Smart TV 58D</a>
                                                                                     </h2>
 
 
@@ -2061,18 +2061,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:80%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/11/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/11/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/11/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/11/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/11/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/11/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/11/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/11/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2086,7 +2086,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/ultra-hd-120hz-smart-led-tv.html" title="Ultra HD 120Hz Smart LED TV" class="product-image">
+                                                                                    <a href="televisions-monitor/ultra-hd-120hz-smart-led-tv.html" title="Ultra HD 120Hz Smart LED TV" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/6/_/6_6.jpg" width="235" height="270" alt="Ultra HD 120Hz Smart LED TV" />
                                 
                                                                         <span class="product-img-back">
@@ -2099,7 +2099,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/ultra-hd-120hz-smart-led-tv.html" title="Ultra HD 120Hz Smart LED TV">Ultra HD 120Hz Smart LED TV</a>
+                                                                                        <a href="televisions-monitor/ultra-hd-120hz-smart-led-tv.html" title="Ultra HD 120Hz Smart LED TV">Ultra HD 120Hz Smart LED TV</a>
                                                                                     </h2>
 
 
@@ -2114,18 +2114,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:80%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/10/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/10/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/10/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/10/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/10/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/10/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/10/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/10/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2141,7 +2141,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-58-ultra-hd-lcd-tv.html" title="Sharp 58&quot; Ultra HD LCD TV" class="product-image">
+                                                                                    <a href="televisions-monitor/sharp-58-ultra-hd-lcd-tv.html" title="Sharp 58&quot; Ultra HD LCD TV" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/5/_/5_7.jpg" width="235" height="270" alt="Sharp 58&quot; Ultra HD LCD TV" />
                                 
                                                                         <span class="product-img-back">
@@ -2154,7 +2154,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-58-ultra-hd-lcd-tv.html" title="Sharp 58&quot; Ultra HD LCD TV">Sharp 58&quot; Ultra HD LCD TV</a>
+                                                                                        <a href="televisions-monitor/sharp-58-ultra-hd-lcd-tv.html" title="Sharp 58&quot; Ultra HD LCD TV">Sharp 58&quot; Ultra HD LCD TV</a>
                                                                                     </h2>
 
 
@@ -2169,18 +2169,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:60%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/9/'; return false;">2 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/9/'; return false;">2 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/9/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/9/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/9/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/9/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/9/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/9/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2195,7 +2195,7 @@
                                                                             <span class="sticker top-left"><span class="labelnew">New</span></span>
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-lc-60ud27u-60-inch.html" title="Sharp LC-60UD27U 60-Inch" class="product-image">
+                                                                                    <a href="televisions-monitor/sharp-lc-60ud27u-60-inch.html" title="Sharp LC-60UD27U 60-Inch" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/4/_/4_5.jpg" width="235" height="270" alt="Sharp LC-60UD27U 60-Inch" />
                                 
                                                                         <span class="product-img-back">
@@ -2208,7 +2208,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-lc-60ud27u-60-inch.html" title="Sharp LC-60UD27U 60-Inch">Sharp LC-60UD27U 60-Inch</a>
+                                                                                        <a href="televisions-monitor/sharp-lc-60ud27u-60-inch.html" title="Sharp LC-60UD27U 60-Inch">Sharp LC-60UD27U 60-Inch</a>
                                                                                     </h2>
 
 
@@ -2223,18 +2223,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:40%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/8/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/8/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/8/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/8/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/8/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/8/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/8/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/8/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2250,7 +2250,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-aquos-70-4k.html" title="Sharp AQUOS 70&quot; 4K " class="product-image">
+                                                                                    <a href="televisions-monitor/sharp-aquos-70-4k.html" title="Sharp AQUOS 70&quot; 4K " class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/3/_/3_4.jpg" width="235" height="270" alt="Sharp AQUOS 70&quot; 4K " />
                                 
                                                                         <span class="product-img-back">
@@ -2263,7 +2263,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-aquos-70-4k.html" title="Sharp AQUOS 70&quot; 4K ">Sharp AQUOS 70&quot; 4K </a>
+                                                                                        <a href="televisions-monitor/sharp-aquos-70-4k.html" title="Sharp AQUOS 70&quot; 4K ">Sharp AQUOS 70&quot; 4K </a>
                                                                                     </h2>
 
 
@@ -2278,18 +2278,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:80%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/7/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/7/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/7/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/7/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/7/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/7/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/7/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/7/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2303,7 +2303,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-lc80uh30u-80inch.html" title="Sharp LC80UH30U 80Inch" class="product-image">
+                                                                                    <a href="televisions-monitor/sharp-lc80uh30u-80inch.html" title="Sharp LC80UH30U 80Inch" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/2/_/2_2.jpg" width="235" height="270" alt="Sharp LC80UH30U 80Inch" />
                                 
                                                                         <span class="product-img-back">
@@ -2316,7 +2316,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/sharp-lc80uh30u-80inch.html" title="Sharp LC80UH30U 80Inch">Sharp LC80UH30U 80Inch</a>
+                                                                                        <a href="televisions-monitor/sharp-lc80uh30u-80inch.html" title="Sharp LC80UH30U 80Inch">Sharp LC80UH30U 80Inch</a>
                                                                                     </h2>
 
 
@@ -2331,18 +2331,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:60%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/6/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/6/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/6/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/6/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/6/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/6/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/6/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/6/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2358,7 +2358,7 @@
                                                                         <div class="per-product">
                                                                             <div class="images-container">
                                                                                 <div class="product-hover">
-                                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/smart-tvs-from-sharpusa.html" title="Smart TVs from SharpUSA" class="product-image">
+                                                                                    <a href="televisions-monitor/smart-tvs-from-sharpusa.html" title="Smart TVs from SharpUSA" class="product-image">
                                     <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/small_image/235x270/9df78eab33525d08d6e5fb8d27136e95/1/_/1_1.jpg" width="235" height="270" alt="Smart TVs from SharpUSA" />
                                 
                                                                         <span class="product-img-back">
@@ -2371,7 +2371,7 @@
                                                                                 </div>
                                                                                 <div class="products-textlink clearfix">
                                                                                     <h2 class="product-name">
-                                                                                        <a href="http://alothemes.com/demo/supermarket/index.php/televisions-monitor/smart-tvs-from-sharpusa.html" title="Smart TVs from SharpUSA">Smart TVs from SharpUSA</a>
+                                                                                        <a href="televisions-monitor/smart-tvs-from-sharpusa.html" title="Smart TVs from SharpUSA">Smart TVs from SharpUSA</a>
                                                                                     </h2>
 
 
@@ -2386,18 +2386,18 @@
                                                                                         <div class="rating-box">
                                                                                             <div class="rating" style="width:60%"></div>
                                                                                         </div>
-                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='http://alothemes.com/demo/supermarket/index.php/review/product/list/id/5/'; return false;">1 Review(s)</a></span>
+                                                                                        <span class="amount"><a href="#" onclick="var t = opener ? opener.window : window; t.location.href='review/product/list/id/5/'; return false;">1 Review(s)</a></span>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="actions-no hover-box">
                                                                                     <div class="actions clearfix">
                                                                                         <div class="show-box">
                                                                                             <div class="actions-cart">
-                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/5/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
+                                                                                                <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/product/5/form_key/IkRCx1boepCUnqIN/')"><span><span>Add to Cart</span></span></button>
                                                                                             </div>
                                                                                             <ul class="add-to-links">
-                                                                                                <li class="pull-left-no pull-wishlist"><a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/5/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/5/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                                                <li class="pull-left-no pull-wishlist"><a href="wishlist/index/add/product/5/form_key/IkRCx1boepCUnqIN/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
+                                                                                                <li class="pull-right-no pull-compare"><span class="separator">|</span> <a href="catalog/product_compare/add/product/5/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvP19fX3N0b3JlPWRlZmF1bHQ,/form_key/IkRCx1boepCUnqIN/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                                             </ul>
                                                                                         </div>
                                                                                     </div>
@@ -2677,37 +2677,37 @@
                                         <div id="slider02445b841e2e4aeabc48072d66599500">
                                             <ul class="shopbrand">
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/pandore">
+                                                    <a href="pandore">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand1.jpg" alt="Pandora" title="Pandora" />
                 </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/ebay">
+                                                    <a href="ebay">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand2.jpg" alt="Ebay" title="Ebay" />
                 </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/electrolux">
+                                                    <a href="electrolux">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand3.jpg" alt="Electrolux" title="Electrolux" />
                 </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/ariston">
+                                                    <a href="ariston">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand4.jpg" alt="Ariston" title="Ariston" />
                 </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/panasonic">
+                                                    <a href="panasonic">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand5.jpg" alt="Panasonic" title="Panasonic" />
                 </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/singer">
+                                                    <a href="singer">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand6.jpg" alt="Singer" title="Singer" />
                 </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a href="http://alothemes.com/demo/supermarket/index.php/pandora2">
+                                                    <a href="pandora2">
                     <img class="brand img-responsive" src="http://alothemes.com/demo/supermarket/media//magiccart/shopbrand/cache/195x107/brand1_1.jpg" alt="Pandora2" title="Pandora2" />
                 </a>
                                                 </li>

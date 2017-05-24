@@ -22,15 +22,23 @@
                                     <div class="top-left col-md-4 col-sm-12 col-xs-12">
                                         <p class="welcome-msg">Wellcome to Super Market </p>
                                         <ul class="top-links">
-                                            <li class="login">
-                                                <a href="customer/account/login/" title="Sign in">Sign in                               </a>
-                                            </li>
-                                            <li>
-                                                <span class="or">or</span>
-                                            </li>
+                                        <?php 
+                                        if($user=User_helper::login()) {
+                                            echo '<li>
+                                                    <a href="customer/account/" title="My account">'.$user['displayname'].'</a>
+                                                </li>
+                                                <li><span class="or">or</span></li>
+                                                <li class="logout">
+                                                    <a href="customer/account/logout/" title="Sign out">Sign out</a>
+                                                </li>';
+                                        } else {
+                                            echo '<li class="login"><a href="customer/account/login/" title="Sign in">Sign in</a></li>
+                                            <li><span class="or">or</span></li>
                                             <li class="first">
-                                                <a id="quick_sigup_link" style="positon:relative;" href="customer/account/create/" title="Register">Register                                    </a>
-                                            </li>
+                                                <a id="quick_sigup_link" style="positon:relative;" href="customer/account/create/" title="Register">Register</a>
+                                            </li>';
+                                            } ?>
+
                                         </ul>
                                     </div>
                                     <div class="top-right col-md-8 col-sm-12 col-xs-12">

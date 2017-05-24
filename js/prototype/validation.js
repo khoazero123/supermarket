@@ -533,7 +533,7 @@ Validation.addAllThese([
                     }],
     ['validate-password', 'Please enter 6 or more characters. Leading or trailing spaces will be ignored.', function(v) {
                 var pass=v.strip(); /*strip leading and trailing spaces*/
-                return !(pass.length>0 && pass.length < 6);
+                return !(pass.length>0 && pass.length < 4);
             }],
     ['validate-admin-password', 'Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.', function(v) {
                 var pass=v.strip();

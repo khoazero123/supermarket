@@ -3,15 +3,15 @@
                     <div class="container">
                         <ul>
                             <li class="home">
-                                <a href="http://alothemes.com/demo/supermarket/index.php/" title="Go to Home Page">Home</a>
+                                <a href="./" title="Go to Home Page">Home</a>
 
                             </li>
-                            <li class="category207">
-                                <a href="http://alothemes.com/demo/supermarket/index.php/accessories.html" title="">Accessories</a>
+                            <li class="category<?=$product['category']['id']?>">
+                                <a href="<?=$product['category']['slug']?>.html" title=""><?=$product['category']['name']?></a>
 
                             </li>
                             <li class="product">
-                                <strong>Fusce nec facilisi</strong>
+                                <strong><?=$product['name']?></strong>
                             </li>
                         </ul>
                     </div>
@@ -29,10 +29,10 @@
                                 <div class="product-view">
                                     <div class="product-essential">
                                         <div class="row">
-                                            <form action="http://alothemes.com/demo/supermarket/index.php/checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw_X19fU0lEPVU,/product/46/form_key/FHb1gk4EfpwwxYrU/" method="post" id="product_addtocart_form">
+                                            <form action="checkout/cart/add/<?=$product['id']?>" method="post" id="product_addtocart_form">
                                                 <input name="form_key" type="hidden" value="FHb1gk4EfpwwxYrU" />
                                                 <div class="no-display">
-                                                    <input type="hidden" name="product" value="46" />
+                                                    <input type="hidden" name="product" value="<?=$product['id']?>" />
                                                     <input type="hidden" name="related_product" id="related-products-field" value="" />
                                                 </div>
                                                 <div class="product-img-box clearfix col-md-5 col-sm-5 col-xs-12">
@@ -97,9 +97,9 @@
                                                 <div class="product-shop col-md-7 col-sm-7 col-xs-12">
                                                     <div class="product-shop-content">
                                                         <div class="product-name">
-                                                            <h1>Fusce nec facilisi</h1>
+                                                            <h1><?=$product['name']?></h1>
                                                         </div>
-                                                        <p class="no-rating"><a href="http://alothemes.com/demo/supermarket/index.php/review/product/list/id/46/category/207/#review-form">Be the first to review this product</a></p>
+                                                        <p class="no-rating"><a href="review/product/list/id/46/category/207/#review-form">Be the first to review this product</a></p>
 
                                                         <div class="product-type-data">
 
@@ -165,13 +165,13 @@
 
                                                             <ul class="add-to-links">
                                                                 <li>
-                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/wishlist/index/add/product/46/form_key/FHb1gk4EfpwwxYrU/" rel="tooltip" title="Add to Wishlist" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-wishlist">
+                                                                    <a href="wishlist/index/add/product/<?=$product['id']?>/form_key/FHb1gk4EfpwwxYrU/" rel="tooltip" title="Add to Wishlist" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-wishlist">
             <i class="lnr lnr-heart icons"></i>
             <span>Wishlist</span>
         </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="http://alothemes.com/demo/supermarket/index.php/catalog/product_compare/add/product/46/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw,/form_key/FHb1gk4EfpwwxYrU/" class="link-compare" title="Add to Compare">
+                                                                    <a href="catalog/product_compare/add/product/<?=$product['id']?>/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw,/form_key/FHb1gk4EfpwwxYrU/" class="link-compare" title="Add to Compare">
             <i class="lnr lnr-sync icons"></i>
             <span>Compare</span>
         </a>
@@ -188,7 +188,7 @@
                                                                 <a href="javascript:print();"><i class="fa fa-print"></i> Print</a>
                                                             </p>
                                                             <p class="email-friend">
-                                                                <a href="http://alothemes.com/demo/supermarket/index.php/sendfriend/product/send/id/46/cat_id/207/">
+                                                                <a href="sendfriend/product/send/id/<?=$product['id']?>/cat_id/<?=$product['category']['id']?>/">
                                  <i class="fa fa-envelope-o"></i>
                                   Email to a Friend                                 </a>
                                                             </p>
@@ -198,7 +198,7 @@
                                                             <div class="alo-social-links clearfix">
                                                                 <div class="so-facebook so-social-share">
                                                                     <div id="fb-root"></div>
-                                                                    <div class="fb-like" data-href="http://alothemes.com/demo/supermarket/index.php/accessories/fusce-nec-facilisi.html" data-send="false" data-layout="button_count" data-width="20" data-show-faces="false"></div>
+                                                                    <div class="fb-like" data-href="<?=$product['category']['slug']?>/<?=$product['slug']?>.html" data-send="false" data-layout="button_count" data-width="20" data-show-faces="false"></div>
                                                                 </div>
                                                                 <div class="so-twitter so-social-share">
                                                                     <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-dnt="true">Tweet</a>
@@ -303,7 +303,7 @@
                                                 <div class=" box-reviews" id="customer-reviews">
                                                     <div class="form-add">
                                                         <h2>Write Your Own Review</h2>
-                                                        <form action="http://alothemes.com/demo/supermarket/index.php/review/product/post/id/46/" method="post" id="review-form">
+                                                        <form action="review/product/post/id/<?=$product['id']?>/" method="post" id="review-form">
                                                             <input name="form_key" type="hidden" value="FHb1gk4EfpwwxYrU" />
                                                             <fieldset>
                                                                 <h3>You're reviewing: <span>Fusce nec facilisi</span></h3>
@@ -421,7 +421,7 @@
                                             </div>
                                             <div class="box-collateral box-tags">
                                                 <h2>Product Tags</h2>
-                                                <form id="addTagForm" action="http://alothemes.com/demo/supermarket/index.php/tag/index/save/product/46/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw,/" method="get">
+                                                <form id="addTagForm" action="tag/index/save/product/<?=$product['id']?>/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw,/" method="get">
                                                     <div class="form-add">
                                                         <label for="productTagName">Add Your Tags:</label>
                                                         <div class="input-box">
