@@ -7,10 +7,12 @@ $route['customer/account/login'] = 'account/login';
 $route['customer/account/loginPost']['POST'] = 'account/doLogin';
 $route['customer/account/logout'] = 'account/logout';
 $route['customer/account/forgotpassword'] = 'account/forgotpassword';
+$route['customer/account/forgotpasswordpost'] = 'account/forgotpasswordPost';
 $route['customer/account/create'] = 'account/create';
-$route['customer/account/createPost'] = 'account/doCreate';
+$route['customer/account/createpost'] = 'account/createPost';
 $route['customer/account/logoutSuccess'] = 'account/logout';
 $route['customer/account/edit'] = 'account/edit';
+$route['customer/account/editPost']['POST'] = 'account/editPost';
 
 $route['magicshop/quickview/view/id/(:num)'] = 'product/quickview/$1';
 

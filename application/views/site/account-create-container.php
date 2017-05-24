@@ -17,7 +17,7 @@
                                             </ul></li></ul>';
                                         } 
                                     ?>
-                                    <form action="customer/account/createPost/" method="post" id="form-validate">
+                                    <form action="customer/account/createpost/" method="post" id="form-validate">
                                         <div class="fieldset">
                                             <input type="hidden" name="success_url" value="" />
                                             <input type="hidden" name="error_url" value="" />

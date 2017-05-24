@@ -31,8 +31,9 @@ class User_helper {
 	}
 	public static function login() {
 		$CI = & get_instance();
-		$user = $CI->session->userdata("user");
-		if($user) return $user;
+		$user = $CI->session->userdata('user');
+		//var_dump($user);exit;
+		if($user) return Self::info($user['id']);
 		return false;
 	}
 }
