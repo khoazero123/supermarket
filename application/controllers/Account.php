@@ -6,6 +6,7 @@ class Account extends CI_Controller {
         parent::__construct();
         $this->load->helper('User');
         $this->load->helper('email');
+        $this->load->model('User_model');
     }
 	public function index() {
 		$data = $this->session->flashdata('data');
@@ -55,25 +56,39 @@ class Account extends CI_Controller {
 		$data['class_body'] = 'customer-account-edit';
 
 
-		$firstname = $this->input->post('firstname'); // :Khoa
-		$middlename = $this->input->post('middlename'); // :Vo
-		$lastname = $this->input->post('lastname'); // :Van
+		$firstname = $this->input->post('firstname');
+		if($firstname) $update['firstname'] = $firstname;
+
+		$middlename = $this->input->post('middlename');
+		if($middlename) $update['middlename'] = $middlename;
+
+		$lastname = $this->input->post('lastname');
+		if($lastname) $update['lastname'] = $lastname;
+
 		$email = $this->input->post('email'); // :khoazero123@gmail.com
+		if(valid_email($email)) $update['email'] = $email;
+		else $data['message']['error'] = 'Email not valid.';
+
 		$change_password = $this->input->post('change_password'); // 1
-		$dummy = $this->input->post('dummy'); // :
+		$dummy = $this->input->post('dummy');
+
 		if($change_password==1) {
-			$current_password = $this->input->post('current_password'); // :
-			$password = $this->input->post('password'); // :
-			$confirmation = $this->input->post('confirmation'); // :
-			//$data['message']['error'] = 'Invalid current password';
+			$current_password = $this->input->post('current_password');
+			if(md5($current_password) != md5($user['password'])) $data['message']['error'] = 'Invalid current password';
+			else {
+				$password = $this->input->post('password'); // :
+				$confirmation = $this->input->post('confirmation'); // :
+				if($password==$confirmation) $update['password'] = md5($password);
+				else $data['message']['error'] = 'Please make sure your passwords match';
+			}
 		}
 
-		$user['firstname'] = $firstname;
-		$user['middlename'] = $middlename;
-		$user['lastname'] = $lastname;
-		$user['email'] = $email;
-		$user['password'] = md5($password);
-		$data['message']['success'] = 'The account information has been saved.';
+		if(!isset($data['message']['error']))
+			if($this->User_model->updateUser($update,$user['id'])) {
+				$user = $this->User_model->getUser($user['id']);
+				$data['message']['success'] = 'The account information has been saved.';
+			} else $data['message']['error'] = 'Cannot update new infomation.';
+
 		$this->session->set_userdata('user', $user);
 		$this->session->set_flashdata('data', $data);
 
@@ -101,7 +116,10 @@ class Account extends CI_Controller {
 		$email = $this->input->post('email'); // :khoazero123@gmail.com
 		$password = $this->input->post('password'); // :
 		$confirmation = $this->input->post('confirmation'); // :
-		if($email == 'khoazero123@gmail.com') {
+
+
+
+		if($this->User_model->getUser($email)) {
 			$data['message']['error'] = 'There is already an account with this email address. If you are sure that it is your email address, <a href="customer/account/forgotpassword/">click here</a> to get your password and access your account.';
 		} else {
 			$user = [
@@ -111,9 +129,14 @@ class Account extends CI_Controller {
 				'email' => $email,
 				'password' => md5($password),
 			];
-			$this->session->set_userdata('user', $user);
-			$data['message']['success'] = 'Thank you for registering with Demo 1.';
-			$redirect = 'customer/account';
+			if($this->User_model->insertUser($user)) {
+				$user = $this->User_model->getUser($email);
+				$this->session->set_userdata('user', $user);
+				$data['message']['success'] = 'Thank you for registering.';
+				$redirect = 'customer/account';
+			} else {
+				$data['message']['error'] = 'Cannot create new user';
+			}
 		}
 		$this->session->set_flashdata('data', $data);
 		redirect($redirect);
@@ -135,8 +158,8 @@ class Account extends CI_Controller {
 		$redirect = '';
 		$login = $this->input->post('login');//login[username]:khoazero123@gmail.com | login[password]:khoa3933230 | send:
 		
-		if($login['username'] == 'khoazero123@gmail.com' && $login['password'] == '1234') {
-			$user = User_helper::info($login['username']);
+		if($user=$this->User_model->getUser(['email' => $login['username'],'password' => $login['password']])) {
+			//$user = User_helper::info($login['username']);
 			$this->session->set_userdata('user', $user);
 			$redirect = 'customer/account';
 		} else {

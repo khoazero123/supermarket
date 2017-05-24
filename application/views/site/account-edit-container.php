@@ -7,6 +7,14 @@
                                     <div class="page-title">
                                         <h1>Edit Account Information</h1>
                                     </div>
+                                    <?php 
+                                        if(!empty($message)) {
+                                            echo '<ul class="messages">
+                                                '.(isset($message['success']) ? '<li class="success-msg"><ul><li><span>'.$message['success'].'</span></li>' : '
+                                                <li class="error-msg"><ul><li><span>'.$message['error'].'</span></li></ul></li>').'
+                                                </ul></li></ul>';
+                                            } 
+                                        ?>
                                     <form action="customer/account/editPost/" method="post" id="form-validate" autocomplete="off">
                                         <div class="fieldset">
                                             <input name="form_key" type="hidden" value="FHb1gk4EfpwwxYrU" />
