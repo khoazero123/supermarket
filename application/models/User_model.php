@@ -5,6 +5,7 @@ class User_model extends CI_Model {
         parent::__construct();
         $this->load->database();
         $this->table = 'user';
+        $this->table_reset_password = 'resetpassword';
         $this->load->helper('email');
     }
     public function listUser() {
@@ -17,6 +18,8 @@ class User_model extends CI_Model {
     public function getUser($id,$password=null) {
         if(valid_email($id))
             $this->db->where('email', $id);
+        elseif(is_array($id))
+            $this->db->where($id);
         else
             $this->db->where('id', $id);
         if(isset($password)) $this->db->where('id', $id);
@@ -34,7 +37,31 @@ class User_model extends CI_Model {
         if($this->db->update($this->table)) return true;
         return false; 
     }
-    function insertUser($data = array()) {
+    public function insertTokenReset($data = array()) {
+        if($this->db->insert($this->table_reset_password, $data)) return $this->db->insert_id();
+        return FALSE;
+    }
+    public function updateTokenReset($data = array()) {
+        if(is_array($id)) $this->db->where($id);
+        else if(is_numeric($id))
+            $this->db->where('id',$id);
+        else
+            $this->db->where('token',$id);
+        
+        if($this->db->update($this->table_reset_password)) return true;
+        return FALSE;
+    }
+    public function getTokenReset($id) {
+        if(is_array($id)) $this->db->where($id);
+        else if(is_numeric($id))
+            $this->db->where('id',$id);
+        else
+            $this->db->where('token',$id);
+        $query = $this->db->get($this->table_reset_password);
+        $result = $query->row_array();
+        return $result;
+    }
+    public function insertUser($data = array()) {
         if($this->db->insert($this->table, $data)) return TRUE;
         return FALSE;
     }

@@ -12,7 +12,7 @@ class User_helper {
 			$user = $CI->User_model->getUser($id);
 		} else $user = $CI->session->userdata('user');
 
-		if($user) $user['displayname'] = implode(' ', array_filter([$user['firstname'],$user['middlename'],$user['lastname']]));
+		if($user && empty($user['displayname'])) $user['displayname'] = implode(' ', array_filter([$user['firstname'],$user['middlename'],$user['lastname']]));
 		
 		return $user;
 	}

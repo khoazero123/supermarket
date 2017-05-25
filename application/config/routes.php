@@ -7,12 +7,30 @@ $route['customer/account/login'] = 'account/login';
 $route['customer/account/loginPost']['POST'] = 'account/doLogin';
 $route['customer/account/logout'] = 'account/logout';
 $route['customer/account/forgotpassword'] = 'account/forgotpassword';
+$route['customer/account/changeforgotten'] = 'account/forgotpassword';
 $route['customer/account/forgotpasswordpost'] = 'account/forgotpasswordPost';
+$route['customer/account/resetpassword'] = 'account/resetpassword';
+$route['customer/account/resetpasswordpost'] = 'account/resetpassword';
 $route['customer/account/create'] = 'account/create';
 $route['customer/account/createpost'] = 'account/createPost';
 $route['customer/account/logoutSuccess'] = 'account/logout';
 $route['customer/account/edit'] = 'account/edit';
 $route['customer/account/editPost']['POST'] = 'account/editPost';
+
+$route['admin'] = 'admin';
+
+$route['customer/address'] = 'account/login';
+$route['sales/order/history'] = 'account/login';
+$route['sales/billing_agreement'] = 'account/login';
+$route['sales/recurring_profile'] = 'account/login';
+$route['review/customer'] = 'account/login';
+$route['tag/customer'] = 'account/login';
+$route['wishlist'] = 'account/login';
+$route['oauth/customer_token'] = 'account/login';
+$route['newsletter/manage'] = 'account/login';
+$route['downloadable/customer/products'] = 'account/login';
+
+
 
 $route['magicshop/quickview/view/id/(:num)'] = 'product/quickview/$1';
 
