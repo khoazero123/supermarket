@@ -67,6 +67,11 @@ $route['magiccategory/index/ajax'] = 'category/ajax';
 $route['sendfriend/product/send/id/(:num)/cat_id/(:num)'] = 'category/ajax';
 $route['tag/index/save/product/(:num)/uenc/(:any)'] = 'category/ajax';
 
+$route['directory/currency/switch/currency/EUR/uenc/(:any)'] = 'category/ajax';
+
+
+$route['category/(:any).html'] = 'product/list/$1';
 $route['(:any)/(:any).html'] = 'product/view/$1/$2';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

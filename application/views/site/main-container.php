@@ -838,7 +838,7 @@
                                                 </div>
                                             </div>
                                             <div class="ajax_loading" style="display:none" data-url="magiccategory/index/ajax2/">
-                                                <img src="http://alothemes.com/demo/supermarket/skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
+                                                <img src="skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
                                             </div>
 
                                             <div class="box-product-content clearfix">

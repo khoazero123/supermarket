@@ -29,6 +29,21 @@ class Product extends CI_Controller {
 		$this->load->view('site/footer-container');
 		$this->load->view('site/footer');
 	}
+	public function list($category) {
+		//if(is_numeric($id))
+		$p = $this->input->post('p'); // desc
+		$dir = $this->input->post('dir'); // desc
+		$order = $this->input->post('order'); // position
+		$limit = $this->input->post('limit'); // int
+		$limit = $this->input->post('limit'); // int
+		$data['class_body'] = 'catalog-category-view categorypath-smartphone-table-html category-smartphone-table';
+
+		$this->load->view('site/header',$data);
+		$this->load->view('site/header-container');
+		$this->load->view('site/product-list-container',$data);
+		$this->load->view('site/footer-container');
+		$this->load->view('site/footer');
+	}
 	public function addWishlist($id) {
 		if(!User_helper::login()) {
 			$this->session->set_flashdata('redirect', 'wishlist/index/index/wishlist_id/'.$id);
