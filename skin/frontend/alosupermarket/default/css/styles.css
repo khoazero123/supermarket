@@ -474,7 +474,7 @@ tr.summary-details-excluded{font-style:italic}
 .header-container-fixed .text-setting{display: none;}
 .header-container-fixed .mini-maincart{margin: 0;padding: 12px 10px 6px;}
 .header-container-fixed .cartSummary{padding-bottom: 0;}
-.header-setting-icon .dropdown-toggle:before {color: #999999; content: "ï€‡";font: 18px/1 FontAwesome;}
+.header-setting-icon .dropdown-toggle:before {color: #999999; content: "";font: 18px/1 FontAwesome;}
 .header-setting-icon .dropdown-toggle{width: 50px;height: 46px;line-height: 46px;cursor: pointer;text-align: center;}
 .header .header-container-fixed .header-setting.header-setting-icon .dropdown-switcher {left: auto;right: 0;padding: 5px 10px;}
 .header-container-fixed .mini-maincart .mini-contentCart {top: 46px;}
@@ -504,7 +504,7 @@ tr.summary-details-excluded{font-style:italic}
 .dd-pointer-up{border-color:rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #c2c2c2 !important; margin-top: -6px !important;}
 .dd-pointer{right: 14px !important;}
 .dd-container .dd-selected .dd-selected-text{margin: 0;color: #2a2a2a;font-weight: normal;}
-.header .form-search .dd-options .dd-option:before {color: #bbbbbb;content: "ïƒ";font-family: FontAwesome;font-size: 13px;margin-right: 10px;text-align: left;width: 32px;}
+.header .form-search .dd-options .dd-option:before {color: #bbbbbb;content: "";font-family: FontAwesome;font-size: 13px;margin-right: 10px;text-align: left;width: 32px;}
 .header .form-search .dd-options .dd-option:hover{color: #ffa800;}
 .header .form-search button.button span{width:45px; height: 40px;line-height: 40px;padding:0;border:none}
 .header .form-search button.button span .fa{font-size: 15px;}
@@ -728,12 +728,12 @@ tr.summary-details-excluded{font-style:italic}
 .block-layered-nav .toggle-content.visible{ display: block;}
 .block-layered-nav .toggle-tab.mobile{padding: 0px 10px;top: 0;color: #ccc;width: auto;font-size: 17px;line-height: 20px;cursor: pointer;font-weight: bold;}
 .block-layered-nav .toggle-tab.mobile:hover{color: #ff3366;}
-.block-layered-nav .toggle-tab:before{content: "ï„‡";font-family: FontAwesome;}
-.block-layered-nav .toggle-visible .toggle-tab:before{content: "ï„†";font-family: FontAwesome;}
+.block-layered-nav .toggle-tab:before{content: "";font-family: FontAwesome;}
+.block-layered-nav .toggle-visible .toggle-tab:before{content: "";font-family: FontAwesome;}
 .block-layered-nav .toggle-tab.mobile{position: absolute;right: 0;display: block !important;line-height: 30px; } */
 .narrow-by{position: relative;padding: 5px 0;outline:medium none !important;margin: 0;}
-/* .block-layered-nav .narrow-by:first-child .toggle-tab:before{content: "ï„†";font-family: FontAwesome;}
-.block-layered-nav .narrow-by.toggle-visible:first-child .toggle-tab:before{content: "ï„‡";}
+/* .block-layered-nav .narrow-by:first-child .toggle-tab:before{content: "";font-family: FontAwesome;}
+.block-layered-nav .narrow-by.toggle-visible:first-child .toggle-tab:before{content: "";}
 .block-layered-nav .narrow-by:first-child .toggle-content{display: block;}
 .block-layered-nav .narrow-by:first-child .toggle-content.visible{display: none;} */
 /* Block:Cart */
@@ -932,7 +932,7 @@ tr.summary-details-excluded{font-style:italic}
 .cate-box .cate-link{font-size: 14px;color: #333;text-transform: capitalize;margin-bottom: 5px;display: inline-block;border-bottom: 1px solid transparent;line-height: normal;}
 .cate-box .cate-link:after{content: "\f101";font-family: FontAwesome;display: inline-block;padding-left: 6px;}
 .cate-box .cate-link:hover{color: #ff8400;border-bottom: 1px solid #ff8400;}
-/*--------------------Google Chrome vĂ  Safari */
+/*--------------------Google Chrome và Safari */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.hot-categories .cate-box{padding: 19px 8px;}
 	.custom-menu .vmagicmenu .block-vmagicmenu-content{padding-top: 7px;}
@@ -1037,7 +1037,7 @@ tr.summary-details-excluded{font-style:italic}
 .trademark-logo, .trademark-desc {border-bottom: 1px dotted #999999;padding-bottom: 20px;}
 .trademark-info .trademark-logo {margin-top: 30px;}
 .trademark-info .trademark-link { border: 1px solid #999999;display: inline-block;line-height: 30px;padding: 0 10px 0 15px;text-transform: uppercase;}
-.trademark-info .trademark-link:after {content: "ïƒ";font: 14px/1 FontAwesome;padding-left: 12px;}
+.trademark-info .trademark-link:after {content: "";font: 14px/1 FontAwesome;padding-left: 12px;}
 .trademark-product{padding-left: 0;}
 .the-brands .item .images-container{float: left;width: 40%;padding: 0;}
 .the-brands .item .images-container .product-img-back{left: 0;top: 0;right: 0;}
@@ -1584,7 +1584,7 @@ tr.summary-details-excluded{font-style:italic}
 .cart .data-table .btn-remove2,
 .mini-contentCart a.btn-remove{ background-image:none;background-color: #333;border-radius: 50%;color: #fff;font-size: 12px;padding: 0;height: 16px;width: 16px; display: inline-block;line-height: 15px;}
 .cart .data-table .btn-remove2:before,
-.mini-contentCart a.btn-remove:before{content: "ï€";font-family: FontAwesome;}
+.mini-contentCart a.btn-remove:before{content: "";font-family: FontAwesome;}
 .cart .data-table .btn-remove2:hover,
 .mini-contentCart a.btn-remove:hover{background-color: #ff8400;color: #fff;}
 .cart .data-table .btn-remove2 .icons,
