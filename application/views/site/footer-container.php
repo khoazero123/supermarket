@@ -8,8 +8,8 @@
                                         <div class="col-lg-3 col-md-3  col-xs-12">
                                             <div class="collapsible mobile-collapsible">
                                                 <div class="block1 block-content-statick">
-                                                    <a class="introduce-logo" href="#"> <img class="img-responsive logo1" alt="" src="http://alothemes.com/demo/supermarket/media/wysiwyg/alothemes/static/introduce-logo.png" />
-<img class="img-responsive logo3" alt="" src="http://alothemes.com/demo/supermarket/media/wysiwyg/alothemes/static/introduce-logo3.png" /><img class="img-responsive logo4" alt="" src="http://alothemes.com/demo/supermarket/media/wysiwyg/alothemes/static/introduce-logo4.png" /><img class="img-responsive logo5" alt="" src="http://alothemes.com/demo/supermarket/media/wysiwyg/alothemes/static/introduce-logo5.png" /><img class="img-responsive logo6" alt="" src="http://alothemes.com/demo/supermarket/media/wysiwyg/alothemes/static/introduce-logo6.png" /></a>
+                                                    <a class="introduce-logo" href="#"> <img class="img-responsive logo1" alt="" src="media/wysiwyg/alothemes/static/introduce-logo.png" />
+<img class="img-responsive logo3" alt="" src="media/wysiwyg/alothemes/static/introduce-logo3.png" /><img class="img-responsive logo4" alt="" src="media/wysiwyg/alothemes/static/introduce-logo4.png" /><img class="img-responsive logo5" alt="" src="media/wysiwyg/alothemes/static/introduce-logo5.png" /><img class="img-responsive logo6" alt="" src="media/wysiwyg/alothemes/static/introduce-logo6.png" /></a>
                                                     <ul class="address-list">
                                                         <li class="feature-icon first">
                                                             <p class="no-margin"><span class="tit-name">Address:</span><span class="tit-contain">Example Street 68, Mahattan, New York, USA.</span></p>
@@ -47,11 +47,11 @@
                                                         <span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
                                                         <div class="block-content block-content-statick toggle-content">
                                                             <ul class="bullet">
-                                                                <li><a href="http://alothemes.com/demo/supermarket/index.php/about-magento-demo-store/">About Us</a></li>
+                                                                <li><a href="about-magento-demo-store/">About Us</a></li>
                                                                 <li><a href="#">Jobs</a></li>
                                                                 <li><a href="#">Affiliates</a></li>
                                                                 <li><a href="#">Meet The Maker</a></li>
-                                                                <li><a href="http://alothemes.com/demo/supermarket/index.php/contacts/">Contact</a></li>
+                                                                <li><a href="contacts/">Contact</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -81,18 +81,18 @@
                                                     <span style="display: none;" class="toggle-tab mobile"><span class="hidden">Tags</span></span>
                                                     <div class="block-content toggle-content">
                                                         <ul class="tags-list">
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/1/" style="font-size:100%;">Accessories</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/5/" style="font-size:100%;">Cavada</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/4/" style="font-size:100%;">Electro</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/10/" style="font-size:100%;">Lipstick</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/3/" style="font-size:100%;">Milano</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/7/" style="font-size:100%;">Smile</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/8/" style="font-size:100%;">Sports</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/9/" style="font-size:100%;">Watch</a></li>
-                                                            <li><a href="http://alothemes.com/demo/supermarket/index.php/tag/product/list/tagId/2/" style="font-size:100%;">kuteshop</a></li>
+                                                            <li><a href="tag/product/list/tagId/1/" style="font-size:100%;">Accessories</a></li>
+                                                            <li><a href="tag/product/list/tagId/5/" style="font-size:100%;">Cavada</a></li>
+                                                            <li><a href="tag/product/list/tagId/4/" style="font-size:100%;">Electro</a></li>
+                                                            <li><a href="tag/product/list/tagId/10/" style="font-size:100%;">Lipstick</a></li>
+                                                            <li><a href="tag/product/list/tagId/3/" style="font-size:100%;">Milano</a></li>
+                                                            <li><a href="tag/product/list/tagId/7/" style="font-size:100%;">Smile</a></li>
+                                                            <li><a href="tag/product/list/tagId/8/" style="font-size:100%;">Sports</a></li>
+                                                            <li><a href="tag/product/list/tagId/9/" style="font-size:100%;">Watch</a></li>
+                                                            <li><a href="tag/product/list/tagId/2/" style="font-size:100%;">kuteshop</a></li>
                                                         </ul>
                                                         <div class="actions">
-                                                            <a href="http://alothemes.com/demo/supermarket/index.php/tag/list/">View All Tags</a>
+                                                            <a href="tag/list/">View All Tags</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -177,7 +177,7 @@
                         <div class="footer">
                             <div class="main">
                                 <div class="row">
-                                    <address>&copy; 2016 <a href="http://alothemes.com/">By Alothemes</a>. All Rights Reserved.</address>
+                                    <address>&copy; 2016 <a href="./">By Alothemes</a>. All Rights Reserved.</address>
                                 </div>
                             </div>
                         </div>

@@ -39,6 +39,7 @@ $route['checkout/cart'] = 'cart';
 
 $route['checkout/cart/add/(:num)']['POST'] = 'cart/add/$1';
 $route['checkout/cart/add/uenc/(:any)/product/(:num)/form_key/(:any)'] = 'cart/add/$1';
+$route['magicshop/ajax/index'] = 'cart/addAjax';
 
 $route['checkout/cart/updatePost']['POST'] = 'cart/update';
 $route['checkout/cart/delete/id/(:num)']['GET'] = 'cart/delete/$1';
@@ -63,6 +64,7 @@ $route['pandora2'] = 'brand/pandora2';
 
 $route['newsletter/subscriber/new']['POST'] = 'newsletter';
 $route['magiccategory/index/ajax'] = 'category/ajax';
+
 
 $route['sendfriend/product/send/id/(:num)/cat_id/(:num)'] = 'category/ajax';
 $route['tag/index/save/product/(:num)/uenc/(:any)'] = 'category/ajax';

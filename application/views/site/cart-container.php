@@ -9,14 +9,14 @@
                                 </div>
                                 <div class="cart-empty">
                                             <p>You have no items in your shopping cart.</p>
-                                    <p>Click <a href="http://alothemes.com/demo/supermarket/index.php/">here</a> to continue shopping.</p>
+                                    <p>Click <a href="//">here</a> to continue shopping.</p>
                                 </div>
                             <?php } else { ?>
                                 <div class="cart">
                                     <div class="page-title title-buttons">
                                         <h1>Shopping Cart</h1>
                                         <ul class="checkout-types">
-                                            <li> <button type="button" title="Proceed to Checkout" class="button btn-proceed-checkout btn-checkout" onclick="window.location='http://alothemes.com/demo/supermarket/index.php/checkout/onepage/';"><span><span>Proceed to Checkout</span></span></button>
+                                            <li> <button type="button" title="Proceed to Checkout" class="button btn-proceed-checkout btn-checkout" onclick="window.location='checkout/onepage/';"><span><span>Proceed to Checkout</span></span></button>
                                             </li>
                                         </ul>
                                     </div>
@@ -55,7 +55,7 @@
                                                 <tfoot>
                                                     <tr>
                                                         <td colspan="50" class="a-right">
-                                                            <button type="button" title="Continue Shopping" class="button btn-continue" onclick="setLocation('http://alothemes.com/demo/supermarket/index.php/')"><span><span>Continue Shopping</span></span></button>
+                                                            <button type="button" title="Continue Shopping" class="button btn-continue" onclick="setLocation('/')"><span><span>Continue Shopping</span></span></button>
                                                             <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update"><span><span>Update Shopping Cart</span></span></button>
                                                             <button type="submit" name="update_cart_action" value="empty_cart" title="Clear Shopping Cart" class="button btn-empty" id="empty_cart_button"><span><span>Clear Shopping Cart</span></span></button>
                                                             <!--[if lt IE 8]>

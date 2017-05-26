@@ -5,6 +5,7 @@ class Product extends CI_Controller {
 	public function __construct() {
         parent::__construct();
         $this->load->helper('User');
+        $this->load->model('Category_model');
     }
 	public function quickview($id)
 	{
@@ -29,14 +30,17 @@ class Product extends CI_Controller {
 		$this->load->view('site/footer-container');
 		$this->load->view('site/footer');
 	}
-	public function list($category) {
-		//if(is_numeric($id))
+	public function list($category) { // slug
+		//exit('');
 		$p = $this->input->post('p'); // desc
 		$dir = $this->input->post('dir'); // desc
 		$order = $this->input->post('order'); // position
 		$limit = $this->input->post('limit'); // int
-		$limit = $this->input->post('limit'); // int
+		$price = $this->input->post('price'); // -100
 		$data['class_body'] = 'catalog-category-view categorypath-smartphone-table-html category-smartphone-table';
+
+		$data['category'] = $this->Category_model->getCategory($category);
+		//var_dump($data['category']);exit;
 
 		$this->load->view('site/header',$data);
 		$this->load->view('site/header-container');

@@ -7,7 +7,7 @@
 
                             </li>
                             <li class="category204">
-                                <strong>Smartphone &amp; Table</strong>
+                                <strong><?=$category['name']?></strong>
                             </li>
                         </ul>
                     </div>
@@ -17,11 +17,11 @@
                         <div class="row">
                             <div class="col-main col-lg-9 col-md-9 col-sm-9 col-xs-12 content-color color f-right">
                                 <div class="page-title category-title">
-                                    <h1>Smartphone &amp; Table</h1>
+                                    <h1><?=$category['name']?></h1>
                                 </div>
 
 
-                                <p class="category-image"><img src="http://alothemes.com/demo/supermarket/media/catalog/category/GridProducts_1.jpg" alt="Smartphone &amp; Table" title="Smartphone &amp; Table" /></p>
+                                <p class="category-image"><img src="http://alothemes.com/demo/supermarket/media/catalog/category/GridProducts_1.jpg" alt="<?=$category['name']?>" title="<?=$category['name']?>" /></p>
                                 <div class="category-description std">
                                     Cooler Smartphone, Modular Mid Tower Chassis </div>
 
@@ -104,30 +104,30 @@
                                                 <a href="javascript:void(0)" title="Grid" class="grid active">
                                                                                         <i class="fa fa-th"></i>
                                                         </a>
-                                                <a href="smartphone-table.html?mode=list" title="List" class="list">
+                                                <a href="category/<?=$category['slug']?>.html?mode=list" title="List" class="list">
                                                                                         <i class="fa fa-th-list"></i>
                                                         </a>
                                             </p>
                                             <div class="sort-by">
                                                 <label>Sort By</label>
                                                 <select onchange="setLocation(this.value)">
-                                                    <option value="smartphone-table.html?dir=asc&amp;order=position" selected="selected">
+                                                    <option value="category/<?=$category['slug']?>.html?dir=asc&amp;order=position" selected="selected">
                                 Position                            </option>
-                                                    <option value="smartphone-table.html?dir=asc&amp;order=name">
+                                                    <option value="category/<?=$category['slug']?>.html?dir=asc&amp;order=name">
                                 Name                            </option>
-                                                    <option value="smartphone-table.html?dir=asc&amp;order=price">
+                                                    <option value="category/<?=$category['slug']?>.html?dir=asc&amp;order=price">
                                 Price                            </option>
                                             </select>
-                                                <a href="smartphone-table.html?dir=desc&amp;order=position" title="Set Descending Direction"><img src="http://alothemes.com/demo/supermarket/skin/frontend/alosupermarket/default/images/i_asc_arrow.gif" alt="Set Descending Direction" class="v-middle" /></a>
+                                                <a href="smartphone-table.html?dir=desc&amp;order=position" title="Set Descending Direction"><img src="skin/frontend/alosupermarket/default/images/i_asc_arrow.gif" alt="Set Descending Direction" class="v-middle" /></a>
                                             </div>
                                             <div class="limiter">
                                                 <label>Show</label>
                                                 <select onchange="setLocation(this.value)">
-                                                    <option value="smartphone-table.html?limit=16" selected="selected">
+                                                    <option value="category/<?=$category['slug']?>.html?limit=16" selected="selected">
                                 16                            </option>
-                                                    <option value="smartphone-table.html?limit=28">
+                                                    <option value="category/<?=$category['slug']?>.html?limit=28">
                                 28                            </option>
-                                                    <option value="smartphone-table.html?limit=36">
+                                                    <option value="category/<?=$category['slug']?>.html?limit=36">
                                 36                            </option>
                                             </select> </div>
                                             <div class="pager">
@@ -142,13 +142,13 @@
 
 
                                                         <li class="current">1</li>
-                                                        <li><a href="smartphone-table.html?p=2">2</a></li>
+                                                        <li><a href="category/<?=$category['slug']?>.html?p=2">2</a></li>
 
 
 
 
                                                         <li class="bor-none">
-                                                            <a class="next i-next" href="smartphone-table.html?p=2" title="Next">
+                                                            <a class="next i-next" href="category/<?=$category['slug']?>.html?p=2" title="Next">
                     <span>Next</span>
                                             <i class="fa fa-angle-right"></i>
                                     </a>
@@ -197,11 +197,11 @@
                                                         <div class="actions">
                                                             <div class="show-box show-box-category">
                                                                 <div class="actions-cart">
-                                                                    <button type="button" title="Add to Cart" class="button btn-cart pull-left-none" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvc21hcnRwaG9uZS10YWJsZS5odG1s/product/1/form_key/dURnHXt7Oa3omYvm/')"><span><span>Add to Cart</span></span></button>
+                                                                    <button type="button" title="Add to Cart" class="button btn-cart pull-left-none" onclick="setLocation('checkout/cart/add/uenc/aHR0cDovL2Fsb3RoZW1lc/product/1/form_key/dURnHXt7Oa3omYvm/')"><span><span>Add to Cart</span></span></button>
                                                                 </div>
                                                                 <ul class="add-to-links pull-left-none">
                                                                     <li class="pull-left-none pull-wishlist"><a href="wishlist/index/add/product/1/form_key/dURnHXt7Oa3omYvm/" title="Add to Wishlist" class="link-wishlist"><i class="lnr lnr-heart icons"></i>Add to Wishlist</a></li>
-                                                                    <li class="pull-left-none pull-compare"><a href="catalog/product_compare/add/product/1/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvc21hcnRwaG9uZS10YWJsZS5odG1s/form_key/dURnHXt7Oa3omYvm/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
+                                                                    <li class="pull-left-none pull-compare"><a href="catalog/product_compare/add/product/1/uenc/aHR0cDovL2Fsb3RoZW1/form_key/dURnHXt7Oa3omYvm/" title="Add to Compare" class="link-compare"><i class="lnr lnr-sync icons"></i>Add to Compare</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -1056,220 +1056,7 @@
                                             <strong><span>Categories</span></strong>
                                         </div>
                                         <ul class="nav-accordion">
-                                            <li class="level0 nav-1 first level-top"><a href="automovie-motorcyle.html" class="level-top"><span>Automovie &amp; Motorcyle</span></a></li>
-                                            <li class="level0 nav-2 level-top parent"><a href="electronics.html" class="level-top"><span>Electronics</span></a>
-                                                <ul class="level0">
-                                                    <li class="level1 nav-2-1 first parent"><a href="electronics/accessories.html"><span>Accessories</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-2-1-1 first"><a href="electronics/accessories/mobile.html"><span>Mobile</span></a></li>
-                                                            <li class="level2 nav-2-1-2"><a href="electronics/accessories/tablets.html"><span>Tablets</span></a></li>
-                                                            <li class="level2 nav-2-1-3 last"><a href="electronics/accessories/memory-cards.html"><span>Memory Cards</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-2-2"><a href="electronics/swimming.html"><span>Swimming</span></a></li>
-                                                    <li class="level1 nav-2-3"><a href="electronics/computers-networking.html"><span>Computers &amp; Networking</span></a></li>
-                                                    <li class="level1 nav-2-4 last"><a href="electronics/flashlights-lamps.html"><span>Flashlights &amp; Lamps</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level0 nav-3 level-top parent"><a href="fashion-accecssories.html" class="level-top"><span>Fashion &amp; Accecssories</span></a>
-                                                <ul class="level0">
-                                                    <li class="level1 nav-3-1 first parent"><a href="fashion-accecssories/fashion-men-s.html"><span>Fashion Men’s</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-3-1-1 first"><a href="fashion-accecssories/fashion-men-s/octa-core.html"><span>Octa Core</span></a></li>
-                                                            <li class="level2 nav-3-1-2"><a href="fashion-accecssories/fashion-men-s/quad-core.html"><span>Quad Core</span></a></li>
-                                                            <li class="level2 nav-3-1-3"><a href="fashion-accecssories/fashion-men-s/single-sim-card.html"><span>Single SIM Card</span></a></li>
-                                                            <li class="level2 nav-3-1-4"><a href="fashion-accecssories/fashion-men-s/dual-sim-card.html"><span>Dual SIM Card</span></a></li>
-                                                            <li class="level2 nav-3-1-5"><a href="fashion-accecssories/fashion-men-s/3gb-ram.html"><span>3GB RAM</span></a></li>
-                                                            <li class="level2 nav-3-1-6 last"><a href="fashion-accecssories/fashion-men-s/5-0-display.html"><span>5.0 Display</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-3-2 parent"><a href="fashion-accecssories/accessories.html"><span>Accessories</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-3-2-1 first"><a href="fashion-accecssories/accessories/pouches.html"><span>Pouches</span></a></li>
-                                                            <li class="level2 nav-3-2-2"><a href="fashion-accecssories/accessories/bumper-cases.html"><span>Bumper Cases</span></a></li>
-                                                            <li class="level2 nav-3-2-3"><a href="fashion-accecssories/accessories/waterproof-cases.html"><span>Waterproof Cases</span></a></li>
-                                                            <li class="level2 nav-3-2-4"><a href="fashion-accecssories/accessories/leather-cases.html"><span>Leather Cases</span></a></li>
-                                                            <li class="level2 nav-3-2-5"><a href="fashion-accecssories/accessories/aluminum-cases.html"><span>Aluminum Cases</span></a></li>
-                                                            <li class="level2 nav-3-2-6 last"><a href="fashion-accecssories/accessories/rhinestone-cases.html"><span>Rhinestone Cases</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-3-3 parent"><a href="fashion-accecssories/fashion-women-s.html"><span>Fashion Women’s</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-3-3-1 first"><a href="fashion-accecssories/fashion-women-s/backup-battery-packs.html"><span>Backup Battery Packs</span></a></li>
-                                                            <li class="level2 nav-3-3-2"><a href="fashion-accecssories/fashion-women-s/screen-protectors.html"><span>Screen Protectors</span></a></li>
-                                                            <li class="level2 nav-3-3-3"><a href="fashion-accecssories/fashion-women-s/mobile-phone-cables.html"><span>Mobile Phone Cables</span></a></li>
-                                                            <li class="level2 nav-3-3-4"><a href="fashion-accecssories/fashion-women-s/chargers.html"><span>Chargers</span></a></li>
-                                                            <li class="level2 nav-3-3-5"><a href="fashion-accecssories/fashion-women-s/holders-stands.html"><span>Holders &amp; Stands</span></a></li>
-                                                            <li class="level2 nav-3-3-6 last"><a href="fashion-accecssories/fashion-women-s/mobile-phone-lenses.html"><span>Mobile Phone Lenses</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-3-4 last parent"><a href="fashion-accecssories/handbag-shoes.html"><span>Handbag &amp; Shoes</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-3-4-1 first"><a href="fashion-accecssories/handbag-shoes/communications.html"><span>Communications</span></a></li>
-                                                            <li class="level2 nav-3-4-2"><a href="fashion-accecssories/handbag-shoes/communication-cables.html"><span>Communication Cables</span></a></li>
-                                                            <li class="level2 nav-3-4-3"><a href="fashion-accecssories/handbag-shoes/fiber-optic-equipment.html"><span>Fiber Optic Equipment</span></a></li>
-                                                            <li class="level2 nav-3-4-4 last"><a href="fashion-accecssories/handbag-shoes/fixed-wireless-terminals.html"><span>Fixed Wireless Terminals</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="level0 nav-4 active level-top parent"><a href="smartphone-table.html" class="level-top"><span>Smartphone &amp; Table</span></a>
-                                                <ul class="level0">
-                                                    <li class="level1 nav-4-1 first parent"><a href="smartphone-table/mobile-phones.html"><span>Mobile Phones</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-4-1-1 first"><a href="smartphone-table/mobile-phones/octa-core.html"><span>Octa Core</span></a></li>
-                                                            <li class="level2 nav-4-1-2"><a href="smartphone-table/mobile-phones/quad-core.html"><span>Quad Core</span></a></li>
-                                                            <li class="level2 nav-4-1-3"><a href="smartphone-table/mobile-phones/single-sim-card.html"><span>Single SIM Card</span></a></li>
-                                                            <li class="level2 nav-4-1-4"><a href="smartphone-table/mobile-phones/dual-sim-card.html"><span>Dual SIM Card</span></a></li>
-                                                            <li class="level2 nav-4-1-5"><a href="smartphone-table/mobile-phones/3gb-ram.html"><span>3GB RAM</span></a></li>
-                                                            <li class="level2 nav-4-1-6 last"><a href="smartphone-table/mobile-phones/5-0-display.html"><span>5.0 Display</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-4-2 parent"><a href="smartphone-table/phone-bags-cases.html"><span>Phone Bags &amp; Cases</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-4-2-1 first"><a href="smartphone-table/phone-bags-cases/pouches.html"><span>Pouches</span></a></li>
-                                                            <li class="level2 nav-4-2-2"><a href="smartphone-table/phone-bags-cases/bumper-cases.html"><span>Bumper Cases</span></a></li>
-                                                            <li class="level2 nav-4-2-3"><a href="smartphone-table/phone-bags-cases/waterproof-cases.html"><span>Waterproof Cases</span></a></li>
-                                                            <li class="level2 nav-4-2-4"><a href="smartphone-table/phone-bags-cases/leather-cases.html"><span>Leather Cases</span></a></li>
-                                                            <li class="level2 nav-4-2-5"><a href="smartphone-table/phone-bags-cases/aluminum-cases.html"><span>Aluminum Cases</span></a></li>
-                                                            <li class="level2 nav-4-2-6 last"><a href="smartphone-table/phone-bags-cases/rhinestone-cases.html"><span>Rhinestone Cases</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-4-3 parent"><a href="smartphone-table/mobile-phone-accessories.html"><span>Mobile Phone Accessories</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-4-3-1 first"><a href="smartphone-table/mobile-phone-accessories/backup-battery-packs.html"><span>Backup Battery Packs</span></a></li>
-                                                            <li class="level2 nav-4-3-2"><a href="smartphone-table/mobile-phone-accessories/screen-protectors.html"><span>Screen Protectors</span></a></li>
-                                                            <li class="level2 nav-4-3-3"><a href="smartphone-table/mobile-phone-accessories/mobile-phone-cables.html"><span>Mobile Phone Cables</span></a></li>
-                                                            <li class="level2 nav-4-3-4"><a href="smartphone-table/mobile-phone-accessories/chargers.html"><span>Chargers</span></a></li>
-                                                            <li class="level2 nav-4-3-5"><a href="smartphone-table/mobile-phone-accessories/holders-stands.html"><span>Holders &amp; Stands</span></a></li>
-                                                            <li class="level2 nav-4-3-6 last"><a href="smartphone-table/mobile-phone-accessories/mobile-phone-lenses.html"><span>Mobile Phone Lenses</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-4-4 parent"><a href="smartphone-table/mobile-phone-parts.html"><span>Mobile Phone Parts</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-4-4-1 first"><a href="smartphone-table/mobile-phone-parts/mobile-phone-lcds.html"><span>Mobile Phone LCDs</span></a></li>
-                                                            <li class="level2 nav-4-4-2"><a href="smartphone-table/mobile-phone-parts/mobile-phone-batteries.html"><span>Mobile Phone Batteries</span></a></li>
-                                                            <li class="level2 nav-4-4-3"><a href="smartphone-table/mobile-phone-parts/mobile-phone-housings.html"><span>Mobile Phone Housings</span></a></li>
-                                                            <li class="level2 nav-4-4-4"><a href="smartphone-table/mobile-phone-parts/signal-boosters.html"><span>Signal Boosters</span></a></li>
-                                                            <li class="level2 nav-4-4-5 last"><a href="smartphone-table/mobile-phone-parts/sim-card-tools.html"><span>SIM Card &amp; Tools</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-4-5 parent"><a href="smartphone-table/walkie-talkies.html"><span>Walkie-Talkies</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-4-5-1 first"><a href="smartphone-table/walkie-talkies/walkie-talkies.html"><span>Walkie-Talkies</span></a></li>
-                                                            <li class="level2 nav-4-5-2 last"><a href="smartphone-table/walkie-talkies/walkie-talkie-accessories.html"><span>Walkie-Talkie Accessories</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-4-6 last parent"><a href="smartphone-table/communication-equipment.html"><span>Communication Equipment</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-4-6-1 first"><a href="smartphone-table/communication-equipment/antennas-for-communications.html"><span>Antennas for Communications</span></a></li>
-                                                            <li class="level2 nav-4-6-2"><a href="smartphone-table/communication-equipment/communication-cables.html"><span>Communication Cables</span></a></li>
-                                                            <li class="level2 nav-4-6-3"><a href="smartphone-table/communication-equipment/fiber-optic-equipment.html"><span>Fiber Optic Equipment</span></a></li>
-                                                            <li class="level2 nav-4-6-4 last"><a href="smartphone-table/communication-equipment/fixed-wireless-terminals.html"><span>Fixed Wireless Terminals</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="level0 nav-5 level-top parent"><a href="furniture.html" class="level-top"><span>Furniture</span></a>
-                                                <ul class="level0">
-                                                    <li class="level1 nav-5-1 first parent"><a href="furniture/handbags-formen-s.html"><span>Handbags Formen’s</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-5-1-1 first"><a href="furniture/handbags-formen-s/octa-core.html"><span>Octa Core</span></a></li>
-                                                            <li class="level2 nav-5-1-2"><a href="furniture/handbags-formen-s/quad-core.html"><span>Quad Core</span></a></li>
-                                                            <li class="level2 nav-5-1-3"><a href="furniture/handbags-formen-s/single-sim-card.html"><span>Single SIM Card</span></a></li>
-                                                            <li class="level2 nav-5-1-4"><a href="furniture/handbags-formen-s/dual-sim-card.html"><span>Dual SIM Card</span></a></li>
-                                                            <li class="level2 nav-5-1-5"><a href="furniture/handbags-formen-s/3gb-ram.html"><span>3GB RAM</span></a></li>
-                                                            <li class="level2 nav-5-1-6 last"><a href="furniture/handbags-formen-s/5-0-display.html"><span>5.0 Display</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-5-2 parent"><a href="furniture/accessories.html"><span>Accessories</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-5-2-1 first"><a href="furniture/accessories/pouches.html"><span>Pouches</span></a></li>
-                                                            <li class="level2 nav-5-2-2"><a href="furniture/accessories/bumper-cases.html"><span>Bumper Cases</span></a></li>
-                                                            <li class="level2 nav-5-2-3"><a href="furniture/accessories/waterproof-cases.html"><span>Waterproof Cases</span></a></li>
-                                                            <li class="level2 nav-5-2-4"><a href="furniture/accessories/leather-cases.html"><span>Leather Cases</span></a></li>
-                                                            <li class="level2 nav-5-2-5"><a href="furniture/accessories/aluminum-cases.html"><span>Aluminum Cases</span></a></li>
-                                                            <li class="level2 nav-5-2-6 last"><a href="furniture/accessories/rhinestone-cases.html"><span>Rhinestone Cases</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-5-3 parent"><a href="furniture/clothing-bags.html"><span>Clothing Bags</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-5-3-1 first"><a href="furniture/clothing-bags/mobile-phone-lcds.html"><span>Mobile Phone LCDs</span></a></li>
-                                                            <li class="level2 nav-5-3-2"><a href="furniture/clothing-bags/mobile-phone-batteries.html"><span>Mobile Phone Batteries</span></a></li>
-                                                            <li class="level2 nav-5-3-3"><a href="furniture/clothing-bags/mobile-phone-housings.html"><span>Mobile Phone Housings</span></a></li>
-                                                            <li class="level2 nav-5-3-4 last"><a href="furniture/clothing-bags/signal-boosters.html"><span>Signal Boosters</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-5-4 last parent"><a href="furniture/walkie-talkies.html"><span>Walkie-Talkies</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-5-4-1 first"><a href="furniture/walkie-talkies/walkie-talkies.html"><span>Walkie-Talkies</span></a></li>
-                                                            <li class="level2 nav-5-4-2 last"><a href="furniture/walkie-talkies/walkie-talkie-accessories.html"><span>Walkie-Talkie Accessories</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="level0 nav-6 level-top parent"><a href="handbags.html" class="level-top"><span>Handbags</span></a>
-                                                <ul class="level0">
-                                                    <li class="level1 nav-6-1 first parent"><a href="handbags/industrial-supplies.html"><span>Industrial Supplies</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-6-1-1 first"><a href="handbags/industrial-supplies/all-industrial-supplies.html"><span>All Industrial Supplies</span></a></li>
-                                                            <li class="level2 nav-6-1-2"><a href="handbags/industrial-supplies/lab-scientific.html"><span>Lab &amp; Scientific</span></a></li>
-                                                            <li class="level2 nav-6-1-3"><a href="handbags/industrial-supplies/janitorial.html"><span>Janitorial</span></a></li>
-                                                            <li class="level2 nav-6-1-4"><a href="handbags/industrial-supplies/sanitation-supplies.html"><span>Sanitation Supplies</span></a></li>
-                                                            <li class="level2 nav-6-1-5"><a href="handbags/industrial-supplies/3gb-ram.html"><span>3GB RAM</span></a></li>
-                                                            <li class="level2 nav-6-1-6 last"><a href="handbags/industrial-supplies/5-0-display.html"><span>5.0 Display</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-6-2 parent"><a href="handbags/car-motorbike.html"><span>Car &amp; Motorbike</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-6-2-1 first"><a href="handbags/car-motorbike/all-cars-bikes.html"><span>All Cars &amp; Bikes</span></a></li>
-                                                            <li class="level2 nav-6-2-2"><a href="handbags/car-motorbike/measure-inspect.html"><span>Measure &amp; Inspect</span></a></li>
-                                                            <li class="level2 nav-6-2-3"><a href="handbags/car-motorbike/car-bike-care.html"><span>Car &amp; Bike Care</span></a></li>
-                                                            <li class="level2 nav-6-2-4 last"><a href="handbags/car-motorbike/lubricants.html"><span>Lubricants</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-6-3 parent"><a href="handbags/shop-for-bike.html"><span>Shop for Bike</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-6-3-1 first"><a href="handbags/shop-for-bike/backup-battery-packs.html"><span>Backup Battery Packs</span></a></li>
-                                                            <li class="level2 nav-6-3-2"><a href="handbags/shop-for-bike/helmets-gloves.html"><span>Helmets &amp; Gloves</span></a></li>
-                                                            <li class="level2 nav-6-3-3"><a href="handbags/shop-for-bike/screen-protectors.html"><span>Screen Protectors</span></a></li>
-                                                            <li class="level2 nav-6-3-4"><a href="handbags/shop-for-bike/bike-parts.html"><span>Bike Parts</span></a></li>
-                                                            <li class="level2 nav-6-3-5"><a href="handbags/shop-for-bike/scarves.html"><span>Scarves</span></a></li>
-                                                            <li class="level2 nav-6-3-6 last"><a href="handbags/shop-for-bike/skirts.html"><span>Skirts</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-6-4 parent"><a href="handbags/shop-for-car.html"><span>Shop for Car</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-6-4-1 first"><a href="handbags/shop-for-car/air-fresheners.html"><span>Air Fresheners</span></a></li>
-                                                            <li class="level2 nav-6-4-2"><a href="handbags/shop-for-car/car-parts.html"><span>Car Parts</span></a></li>
-                                                            <li class="level2 nav-6-4-3"><a href="handbags/shop-for-car/tyre-accessories.html"><span>Tyre Accessories</span></a></li>
-                                                            <li class="level2 nav-6-4-4"><a href="handbags/shop-for-car/sim-card-tools.html"><span>SIM Card &amp; Tools</span></a></li>
-                                                            <li class="level2 nav-6-4-5 last"><a href="handbags/shop-for-car/signal-boosters.html"><span>Signal Boosters</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-6-5 last parent"><a href="handbags/football.html"><span>Football</span></a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-6-5-1 first"><a href="handbags/football/coats-jackets.html"><span>Coats &amp; Jackets</span></a></li>
-                                                            <li class="level2 nav-6-5-2"><a href="handbags/football/blouses-shirts.html"><span>Blouses &amp; Shirts</span></a></li>
-                                                            <li class="level2 nav-6-5-3 last"><a href="handbags/football/tops-tees.html"><span>Tops &amp; Tees</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="level0 nav-7 level-top"><a href="health-beauty.html" class="level-top"><span>Health &amp; Beauty</span></a></li>
-                                            <li class="level0 nav-8 level-top"><a href="bags-shoe.html" class="level-top"><span>Bags &amp; Shoe</span></a></li>
-                                            <li class="level0 nav-9 level-top"><a href="accessories.html" class="level-top"><span>Accessories</span></a></li>
-                                            <li class="level0 nav-10 level-top"><a href="televisions-monitor.html" class="level-top"><span>Televisions &amp; Monitor</span></a></li>
-                                            <li class="level0 nav-11 level-top"><a href="toy-hobbies.html" class="level-top"><span>Toy &amp; Hobbies</span></a></li>
-                                            <li class="level0 nav-12 level-top"><a href="computer-networking.html" class="level-top"><span>Computer &amp; Networking</span></a></li>
-                                            <li class="level0 nav-13 level-top"><a href="laptop-accessories.html" class="level-top"><span>Laptop &amp; Accessories</span></a></li>
-                                            <li class="level0 nav-14 level-top"><a href="sport-outdoors.html" class="level-top"><span>Sport &amp; Outdoors</span></a></li>
-                                            <li class="level0 nav-15 level-top"><a href="camera-lamp.html" class="level-top"><span>Camera &amp; Lamp</span></a></li>
-                                            <li class="level0 nav-16 level-top"><a href="watch-shoes.html" class="level-top"><span>Watch &amp; Shoes</span></a></li>
-                                            <li class="level0 nav-17 level-top"><a href="smartphone.html" class="level-top"><span>SmartPhone</span></a></li>
-                                            <li class="level0 nav-18 level-top"><a href="camera-usb.html" class="level-top"><span>Camera &amp; USB</span></a></li>
-                                            <li class="level0 nav-19 level-top"><a href="electrolux-furniture.html" class="level-top"><span>Electrolux &amp; Furniture</span></a></li>
-                                            <li class="level0 nav-20 last level-top"><a href="sport.html" class="level-top"><span>Sport</span></a></li>
+                                            <?=$this->mycategory->printNavCategory()?>
                                         </ul>
                                         <div class="all-cat"><span>All Categories</span><span style="display:none">Close</span></div>
                                     </div>
@@ -1450,7 +1237,7 @@
                                             </ul>
                                         </div>
                                         <div class="ajax_loading" style="display:none" data-url="magicproduct/index/ajax/">
-                                            <img src="http://alothemes.com/demo/supermarket/skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
+                                            <img src="skin/frontend/alosupermarket/default/magiccart/plugin/images/loading.gif" alt="Loading..." />
                                         </div>
                                         <div class="content-products" data-margin="10" data-slider='null' data-options='{"480":"1","640":"1","768":"1","992":"1","993":"1"}'>
 

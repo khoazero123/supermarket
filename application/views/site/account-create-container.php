@@ -122,7 +122,7 @@
                                         </div>
                                         <div class="buttons-set">
                                             <p class="required">* Required Fields</p>
-                                            <p class="back-link"><a href="http://alothemes.com/demo/supermarket/index.php/customer/account/login/" class="back-link"><small>&laquo; </small>Back</a></p>
+                                            <p class="back-link"><a href="customer/account/login/" class="back-link"><small>&laquo; </small>Back</a></p>
                                             <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button>
                                         </div>
                                     </form>
