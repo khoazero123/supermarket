@@ -103,146 +103,8 @@
                                                     <input id="catsearch" type="hidden" name="cat" />
                                                     <select class="ddslick" id="cat" name="cat">
                                                         <option value="">All Categories</option>
-                                                        <option value="201">Automovie & Motorcyle</option>
-                                                        <option value="202">Electronics</option>
-                                                        <option value="254">-Accessories</option>
-                                                        <option value="258">-&nbsp;-Mobile</option>
-                                                        <option value="259">-&nbsp;-Tablets</option>
-                                                        <option value="260">-&nbsp;-Memory Cards</option>
-                                                        <option value="255">-Swimming</option>
-                                                        <option value="256">-Computers & Networking</option>
-                                                        <option value="257">-Flashlights & Lamps</option>
-                                                        <option value="212">Fashion & Accecssories</option>
-                                                        <option value="315">-Fashion Men’s</option>
-                                                        <option value="316">-&nbsp;-Octa Core</option>
-                                                        <option value="317">-&nbsp;-Quad Core</option>
-                                                        <option value="318">-&nbsp;-Single SIM Card</option>
-                                                        <option value="319">-&nbsp;-Dual SIM Card</option>
-                                                        <option value="320">-&nbsp;-3GB RAM</option>
-                                                        <option value="321">-&nbsp;-5.0 Display</option>
-                                                        <option value="322">-Accessories</option>
-                                                        <option value="323">-&nbsp;-Pouches</option>
-                                                        <option value="324">-&nbsp;-Bumper Cases</option>
-                                                        <option value="325">-&nbsp;-Waterproof Cases</option>
-                                                        <option value="326">-&nbsp;-Leather Cases</option>
-                                                        <option value="327">-&nbsp;-Aluminum Cases</option>
-                                                        <option value="328">-&nbsp;-Rhinestone Cases</option>
-                                                        <option value="329">-Fashion Women’s</option>
-                                                        <option value="330">-&nbsp;-Backup Battery Packs</option>
-                                                        <option value="331">-&nbsp;-Screen Protectors</option>
-                                                        <option value="332">-&nbsp;-Mobile Phone Cables</option>
-                                                        <option value="333">-&nbsp;-Chargers</option>
-                                                        <option value="334">-&nbsp;-Holders & Stands</option>
-                                                        <option value="335">-&nbsp;-Mobile Phone Lenses</option>
-                                                        <option value="336">-Handbag & Shoes</option>
-                                                        <option value="337">-&nbsp;-Communications</option>
-                                                        <option value="338">-&nbsp;-Communication Cables</option>
-                                                        <option value="339">-&nbsp;-Fiber Optic Equipment</option>
-                                                        <option value="340">-&nbsp;-Fixed Wireless Terminals</option>
-                                                        <option value="204">Smartphone & Table</option>
-                                                        <option value="214">-Mobile Phones</option>
-                                                        <option value="220">-&nbsp;-Octa Core</option>
-                                                        <option value="221">-&nbsp;-Quad Core</option>
-                                                                                                        <option value="222">-&nbsp;-Single SIM Card</option>
-                                                                                                        <option value="223">-&nbsp;-Dual SIM Card</option>
-                                                                                                        <option value="224">-&nbsp;-3GB RAM</option>
-                                                                                                        <option value="225">-&nbsp;-5.0 Display</option>
-                                                                                                                                                    <option value="215">-Phone Bags & Cases</option>
-                                                                                                <option value="226">-&nbsp;-Pouches</option>
-                                                                                                        <option value="227">-&nbsp;-Bumper Cases</option>
-                                                                                                        <option value="228">-&nbsp;-Waterproof Cases</option>
-                                                                                                        <option value="229">-&nbsp;-Leather Cases</option>
-                                                                                                        <option value="230">-&nbsp;-Aluminum Cases</option>
-                                                                                                        <option value="231">-&nbsp;-Rhinestone Cases</option>
-                                                                                                                                                    <option value="216">-Mobile Phone Accessories</option>
-                                                                                                <option value="232">-&nbsp;-Backup Battery Packs</option>
-                                                                                                        <option value="233">-&nbsp;-Screen Protectors</option>
-                                                                                                        <option value="234">-&nbsp;-Mobile Phone Cables</option>
-                                                                                                        <option value="235">-&nbsp;-Chargers</option>
-                                                                                                        <option value="236">-&nbsp;-Holders & Stands</option>
-                                                                                                        <option value="237">-&nbsp;-Mobile Phone Lenses</option>
-                                                                                                                                                    <option value="217">-Mobile Phone Parts</option>
-                                                                                                <option value="238">-&nbsp;-Mobile Phone LCDs</option>
-                                                                                                        <option value="239">-&nbsp;-Mobile Phone Batteries</option>
-                                                                                                        <option value="240">-&nbsp;-Mobile Phone Housings</option>
-                                                                                                        <option value="241">-&nbsp;-Signal Boosters</option>
-                                                                                                        <option value="242">-&nbsp;-SIM Card & Tools</option>
-                                                                                                                                                    <option value="218">-Walkie-Talkies</option>
-                                                                                                <option value="243">-&nbsp;-Walkie-Talkies</option>
-                                                                                                        <option value="244">-&nbsp;-Walkie-Talkie Accessories</option>
-                                                                                                                                                    <option value="219">-Communication Equipment</option>
-                                                                                                <option value="245">-&nbsp;-Antennas for Communications</option>
-                                                                                                        <option value="246">-&nbsp;-Communication Cables</option>
-                                                                                                        <option value="247">-&nbsp;-Fiber Optic Equipment</option>
-                                                                                                        <option value="248">-&nbsp;-Fixed Wireless Terminals</option>
-                                                                                                                                                                                        <option value="285">Furniture</option>
-                                                                                        <option value="286">-Handbags Formen’s</option>
-                                                                                                <option value="287">-&nbsp;-Octa Core</option>
-                                                                                                        <option value="288">-&nbsp;-Quad Core</option>
-                                                                                                        <option value="289">-&nbsp;-Single SIM Card</option>
-                                                                                                        <option value="290">-&nbsp;-Dual SIM Card</option>
-                                                                                                        <option value="291">-&nbsp;-3GB RAM</option>
-                                                                                                        <option value="292">-&nbsp;-5.0 Display</option>
-                                                                                                                                                    <option value="293">-Accessories</option>
-                                                                                                <option value="294">-&nbsp;-Pouches</option>
-                                                                                                        <option value="295">-&nbsp;-Bumper Cases</option>
-                                                                                                        <option value="296">-&nbsp;-Waterproof Cases</option>
-                                                                                                        <option value="297">-&nbsp;-Leather Cases</option>
-                                                                                                        <option value="298">-&nbsp;-Aluminum Cases</option>
-                                                                                                        <option value="299">-&nbsp;-Rhinestone Cases</option>
-                                                                                                                                                    <option value="300">-Clothing Bags</option>
-                                                                                                <option value="301">-&nbsp;-Mobile Phone LCDs</option>
-                                                                                                        <option value="302">-&nbsp;-Mobile Phone Batteries</option>
-                                                                                                        <option value="303">-&nbsp;-Mobile Phone Housings</option>
-                                                                                                        <option value="304">-&nbsp;-Signal Boosters</option>
-                                                                                                                                                    <option value="306">-Walkie-Talkies</option>
-                                                                                                <option value="307">-&nbsp;-Walkie-Talkies</option>
-                                                                                                        <option value="308">-&nbsp;-Walkie-Talkie Accessories</option>
-                                                                                                                                                                                        <option value="261">Handbags</option>
-                                                                                        <option value="262">-Industrial Supplies</option>
-                                                                                                <option value="263">-&nbsp;-All Industrial Supplies</option>
-                                                                                                        <option value="274">-&nbsp;-Lab & Scientific</option>
-                                                                                                        <option value="275">-&nbsp;-Janitorial</option>
-                                                                                                        <option value="276">-&nbsp;-Sanitation Supplies</option>
-                                                                                                        <option value="309">-&nbsp;-3GB RAM</option>
-                                                                                                        <option value="310">-&nbsp;-5.0 Display</option>
-                                                                                                                                                    <option value="264">-Car & Motorbike</option>
-                                                                                                <option value="265">-&nbsp;-All Cars & Bikes</option>
-                                                                                                        <option value="277">-&nbsp;-Measure & Inspect</option>
-                                                                                                        <option value="278">-&nbsp;-Car & Bike Care</option>
-                                                                                                        <option value="279">-&nbsp;-Lubricants</option>
-                                                                                                                                                    <option value="266">-Shop for Bike</option>
-                                                                                                <option value="311">-&nbsp;-Backup Battery Packs</option>
-                                                                                                        <option value="267">-&nbsp;-Helmets & Gloves</option>
-                                                                                                        <option value="312">-&nbsp;-Screen Protectors</option>
-                                                                                                        <option value="280">-&nbsp;-Bike Parts</option>
-                                                                                                        <option value="281">-&nbsp;-Scarves</option>
-                                                                                                        <option value="282">-&nbsp;-Skirts</option>
-                                                                                                                                                    <option value="268">-Shop for Car</option>
-                                                                                                <option value="269">-&nbsp;-Air Fresheners</option>
-                                                                                                        <option value="283">-&nbsp;-Car Parts</option>
-                                                                                                        <option value="284">-&nbsp;-Tyre Accessories</option>
-                                                                                                        <option value="313">-&nbsp;-SIM Card & Tools</option>
-                                                                                                        <option value="314">-&nbsp;-Signal Boosters</option>
-                                                                                                                                                    <option value="270">-Football</option>
-                                                                                                <option value="271">-&nbsp;-Coats & Jackets</option>
-                                                                                                        <option value="272">-&nbsp;-Blouses & Shirts</option>
-                                                                                                        <option value="273">-&nbsp;-Tops & Tees</option>
-                                                                                                                                                                                        <option value="205">Health & Beauty</option>
-                                                                                                                            <option value="206">Bags & Shoe</option>
-                                                                                                                            <option value="207">Accessories</option>
-                                                                                                                            <option value="250">Televisions & Monitor</option>
-                                                                                                                            <option value="208">Toy & Hobbies</option>
-                                                                                                                            <option value="209">Computer & Networking</option>
-                                                                                                                            <option value="210">Laptop & Accessories</option>
-                                                                                                                            <option value="203">Sport & Outdoors</option>
-                                                                                                                            <option value="211">Camera & Lamp</option>
-                                                                                                                            <option value="213">Watch & Shoes</option>
-                                                                                                                            <option value="249">SmartPhone</option>
-                                                                                                                            <option value="251">Camera & USB</option>
-                                                                                                                            <option value="252">Electrolux & Furniture</option>
-                                                                                                                            <option value="253">Sport</option>
-                                                                                                                    </select>
+                                                        <?=printMenuCategory('generateSelectMenuHTMLCategories')?>
+                                                    </select>
                                                     <div class="form-imput-serach">
                                                         <input id="search" type="text" name="q" class="input-text" placeholder="Search ..." />
                                                     </div>
@@ -319,7 +181,7 @@
                                                             </div>
                                                             <div class="block-vmagicmenu-content">
                                                                 <ul class="vmagicmenu-narrow clearfix">
-                                                                    <?=$this->mycategory->printMenuCategory()?>
+                                                                    <?=printMenuCategory('generateMenuHTMLCategories')?>
                                                                 </ul>
                                                                 <div class="all-cat"><span>All Categories</span><span style="display:none">Close</span></div>
                                                             </div>
@@ -336,7 +198,7 @@
                                                                         <div><a href="?___store=english_6"><span class="demo-home">Demo 6</span></a></div>
                                                                     </div>
                                                                 </li>
-                                                                <li class="level0 cat  hasChild" data-options='{"menu_id":"3","cat_columns":"3","cat_proportions":"3","right_proportions":"1","left_proportions":null}'><a class="level-top" href="smartphone-table.html"><img class="img-responsive" alt="Smartphone & Table" src="http://alothemes.com/demo/supermarket/media/catalog/category//02.png"><span>Smartphone & Table</span><span class="boder-menu"></span></a>
+                                                                <li class="level0 cat  hasChild" data-options='{"menu_id":"3","cat_columns":"3","cat_proportions":"3","right_proportions":"1","left_proportions":null}'><a class="level-top" href="smartphone-table.html"><img class="img-responsive" alt="Smartphone & Table" src="http://alothemes.com/demo/supermarket/media/catalog/category//02.png"><span>Smartphone & Table 1</span><span class="boder-menu"></span></a>
                                                                     <div class="level-top-mega">
                                                                         <div class="content-mega">
                                                                             <div class="content-mega-horizontal">
@@ -772,7 +634,7 @@
                                                                         </li>
                                                                     </ul>
                                                                 </li>
-                                                                <li class="level0"><a class="level-top" href="smartphone-table.html"><img class="img-responsive" alt="Smartphone & Table" src="http://alothemes.com/demo/supermarket/media/catalog/category//02.png"><span>Smartphone & Table</span><span class="boder-menu"></span></a>
+                                                                <li class="level0"><a class="level-top" href="smartphone-table.html"><img class="img-responsive" alt="Smartphone & Table" src="http://alothemes.com/demo/supermarket/media/catalog/category//02.png"><span>Smartphone & Table 2</span><span class="boder-menu"></span></a>
                                                                     <ul>
                                                                         <li><a href="smartphone-table/mobile-phones.html"><span>Mobile Phones</span></a>
                                                                             <ul class="level1">

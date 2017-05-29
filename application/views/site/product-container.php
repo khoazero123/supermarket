@@ -6,10 +6,13 @@
                                 <a href="./" title="Go to Home Page">Home</a>
 
                             </li>
-                            <li class="category<?=$product['category']['id']?>">
-                                <a href="<?=$product['category']['slug']?>.html" title=""><?=$product['category']['name']?></a>
+                            <?php 
+                            if($product['categorys'])
+                                echo '<li class="category'.$product['categorys'][0]['id'].'">
+                                <a href="category/'.$product['categorys'][0]['slug'].'-'.$product['categorys'][0]['id'].'.html" title="">'.$product['categorys'][0]['name'].'</a>
+                                </li>';
+                            ?>
 
-                            </li>
                             <li class="product">
                                 <strong><?=$product['name']?></strong>
                             </li>
@@ -39,37 +42,47 @@
                                                     <div class="product-img-content">
                                                         <div class="product-image product-image-zoom">
                                                             <div class="product-image-gallery">
-                                                                <span class="sticker top-right"><span class="labelsale">-72%</span></span> <img id="image-main" class="gallery-image visible img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/600x710.4/9df78eab33525d08d6e5fb8d27136e95/5/_/5_34.jpg" alt="Fusce nec facilisi" title="Fusce nec facilisi" />
+                                                                <span class="sticker top-right"><span class="labelsale">-72%</span></span> 
+                                                                <img id="image-main" class="gallery-image visible img-responsive" src="<?=@$product['images'][0]['url']?>" alt="Fusce nec facilisi" title="Fusce nec facilisi" />
 
+                                                                <?php 
+                                                                if(!empty($product['images'])) {
+                                                                    $i=0;
+                                                                    foreach ($product['images'] as $image) {
+                                                                        echo '<img id="image-'.$i.'" class="gallery-image" src="'.$image['url'].'" data-zoom-image="'.$image['url'].'" />';
+                                                                        $i++;
+                                                                    }
+                                                                } else { ?>
                                                                 <img id="image-0" class="gallery-image" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/5/_/5_34.jpg" data-zoom-image="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/5/_/5_34.jpg" />
                                                                 <img id="image-1" class="gallery-image" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/4/_/4_36.jpg" data-zoom-image="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/4/_/4_36.jpg" />
                                                                 <img id="image-2" class="gallery-image" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/_/2_23.jpg" data-zoom-image="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/_/2_23.jpg" />
                                                                 <img id="image-3" class="gallery-image" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/7/_/7_19.jpg" data-zoom-image="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/7/_/7_19.jpg" />
                                                                 <img id="image-4" class="gallery-image" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/8/_/8_15.jpg" data-zoom-image="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/8/_/8_15.jpg" />
                                                                 <img id="image-5" class="gallery-image" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/6/_/6_26.jpg" data-zoom-image="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/6/_/6_26.jpg" />
+                                                                <?php } ?>
                                                             </div>
                                                         </div>
 
                                                         <div class="more-views">
                                                             <h2>More Views</h2>
                                                             <ul class="product-image-thumbs">
-                                                                <li>
-                                                                    <a class="thumb-link" href="#" title="" data-image-index="0">
-                <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/thumbnail/146x163/9df78eab33525d08d6e5fb8d27136e95/5/_/5_34.jpg"
-                      alt="" />
-            </a>
-                                                                </li>
+                                                            <?php 
+                                                            if(!empty($product['images'])) {
+                                                                $i=0;
+                                                                foreach ($product['images'] as $image) {
+                                                                    echo '<li><a class="thumb-link" href="#" title="" data-image-index="'.$i.'"><img class="img-responsive" src="'.$image['thumbnail'].'" alt="" /></a></li>';
+                                                                    $i++;
+                                                                }
+                                                            } else { ?>
                                                                 <li>
                                                                     <a class="thumb-link" href="#" title="" data-image-index="1">
-                <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/thumbnail/146x163/9df78eab33525d08d6e5fb8d27136e95/4/_/4_36.jpg"
-                      alt="" />
-            </a>
+                                                                        <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/thumbnail/146x163/9df78eab33525d08d6e5fb8d27136e95/4/_/4_36.jpg" alt="" />
+                                                                    </a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="thumb-link" href="#" title="" data-image-index="2">
-                <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/thumbnail/146x163/9df78eab33525d08d6e5fb8d27136e95/2/_/2_23.jpg"
-                      alt="" />
-            </a>
+                                                                        <img class="img-responsive" src="http://alothemes.com/demo/supermarket/media/catalog/product/cache/1/thumbnail/146x163/9df78eab33525d08d6e5fb8d27136e95/2/_/2_23.jpg" alt="" />
+                                                                    </a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="thumb-link" href="#" title="" data-image-index="3">
@@ -89,6 +102,7 @@
                       alt="" />
             </a>
                                                                 </li>
+                                                                <?php } ?>
                                                             </ul>
                                                         </div>
 
@@ -102,34 +116,36 @@
                                                         <p class="no-rating"><a href="review/product/list/id/46/category/207/#review-form">Be the first to review this product</a></p>
 
                                                         <div class="product-type-data">
-
-
-
                                                             <div class="price-box">
-
-                                                                <p class="old-price">
+                                                            <?php if(!$product['special_price']) {
+                                                                echo '<span class="regular-price" id="product-price-4">
+                                                                    <span class="price">$'.$product['price'].'</span>
+                                                                </span>';
+                                                            } else {
+                                                                echo '<p class="old-price">
                                                                     <span class="price-label">Regular Price:</span>
-                                                                    <span class="price" id="old-price-46">
-                    $890.00                </span>
+                                                                    <span class="price" id="old-price-46">$'.$product['price'].'</span>
                                                                 </p>
-
                                                                 <p class="special-price">
                                                                     <span class="price-label">Special Price</span>
-                                                                    <span class="price" id="product-price-46">
-                    $250.00                </span>
-                                                                </p>
-
+                                                                    <span class="price" id="product-price-46">$'.$product['special_price'].'</span>
+                                                                </p>';
+                                                            } ?>
 
                                                             </div>
+                                                            <?php 
+                                                            if($product['quantity'] < 1)
+                                                                echo '<p class="availability">Availability: <span>Out stock</span></p>';
+                                                            else
+                                                                echo '<p class="availability in-stock">Availability: <span>In stock</span></p>';
+                                                            ?>
 
-
-                                                            <p class="availability in-stock">Availability: <span>In stock</span></p>
                                                         </div>
 
                                                         <div class="short-description">
                                                             <h2>Short Description</h2>
                                                             <div class="std">
-                                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                                                <p><?=nl2br($product['description'])?></p>
                                                             </div>
                                                         </div>
 
@@ -140,7 +156,7 @@
                                                             <div class="product-qty">
                                                                 <label for="qty">Qty:</label>
                                                                 <div class="custom-qty">
-                                                                    <input type="text" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="input-text qty" />
+                                                                    <input type="text" name="qty" id="qty" maxlength="<?=$product['quantity']?>" value="1" title="Qty" class="input-text qty" />
                                                                     <div class="btn-plus">
 
                                                                         <button type="button" class="increase items" onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;">
@@ -171,7 +187,7 @@
         </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="catalog/product_compare/add/product/<?=$product['id']?>/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw,/form_key/FHb1gk4EfpwwxYrU/" class="link-compare" title="Add to Compare">
+                                                                    <a href="catalog/product_compare/add/product/<?=$product['id']?>/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtw,/form_key/FHb1gk4EfpwwxYrU/" class="link-compare" title="Add to Compare">
             <i class="lnr lnr-sync icons"></i>
             <span>Compare</span>
         </a>
@@ -188,7 +204,7 @@
                                                                 <a href="javascript:print();"><i class="fa fa-print"></i> Print</a>
                                                             </p>
                                                             <p class="email-friend">
-                                                                <a href="sendfriend/product/send/id/<?=$product['id']?>/cat_id/<?=$product['category']['id']?>/">
+                                                                <a href="sendfriend/product/send/id/<?=$product['id']?>/cat_id/<?=$product['categorys'][0]['id']?>/">
                                  <i class="fa fa-envelope-o"></i>
                                   Email to a Friend                                 </a>
                                                             </p>
@@ -198,7 +214,7 @@
                                                             <div class="alo-social-links clearfix">
                                                                 <div class="so-facebook so-social-share">
                                                                     <div id="fb-root"></div>
-                                                                    <div class="fb-like" data-href="<?=$product['category']['slug']?>/<?=$product['slug']?>.html" data-send="false" data-layout="button_count" data-width="20" data-show-faces="false"></div>
+                                                                    <div class="fb-like" data-href="<?=$product['categorys'][0]['slug']?>/<?=$product['slug']?>.html" data-send="false" data-layout="button_count" data-width="20" data-show-faces="false"></div>
                                                                 </div>
                                                                 <div class="so-twitter so-social-share">
                                                                     <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-dnt="true">Tweet</a>
@@ -292,15 +308,52 @@
                                                 <h2>Description</h2>
                                                 <h2>Details</h2>
                                                 <div class="std">
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum</p>
+                                                    <p><?=nl2br($product['description'])?></p>
                                                 </div>
                                             </div>
                                             <div class="box-collateral box-reviews">
                                                 <h2>Reviews</h2>
 
-
                                                 <div class=" box-reviews" id="customer-reviews">
+                                                <h2>Customer Reviews</h2>
+                                                <!-- foreach here -->
+                                                <dl>
+                                                    <dt><a href="review/product/view/id/21/">alothemes</a> Review by <span>Tuyen</span></dt>
+                                                    <dd>
+                                                <table class="ratings-table">
+                                                    <col width="1" />
+                                                    <col />
+                                                    <tbody>
+                                                        <tr><th>Price</th>
+                                                            <td>
+                                                                <div class="rating-box">
+                                                                    <div class="rating" style="width:40%;"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Value</th>
+                                                            <td>
+                                                                <div class="rating-box">
+                                                                    <div class="rating" style="width:40%;"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Quality</th>
+                                                            <td>
+                                                                <div class="rating-box">
+                                                                    <div class="rating" style="width:40%;"></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat                
+                                                    <small class="date">(Posted on 9/6/2016)</small>
+                                                    </dd>
+                                                </dl>
+                                                <!-- END foreach here -->
                                                     <div class="form-add">
                                                         <h2>Write Your Own Review</h2>
                                                         <form action="review/product/post/id/<?=$product['id']?>/" method="post" id="review-form">
@@ -421,17 +474,17 @@
                                             </div>
                                             <div class="box-collateral box-tags">
                                                 <h2>Product Tags</h2>
-                                                <form id="addTagForm" action="tag/index/save/product/<?=$product['id']?>/uenc/aHR0cDovL2Fsb3RoZW1lcy5jb20vZGVtby9zdXBlcm1hcmtldC9pbmRleC5waHAvYWNjZXNzb3JpZXMvZnVzY2UtbmVjLWZhY2lsaXNpLmh0bWw,/" method="get">
+                                                <form id="addTagForm" action="tag/index/save/product/<?=$product['id']?>/uenc/aHR0cDovL2Fsb3Romh0bWw,/" method="get">
                                                     <div class="form-add">
                                                         <label for="productTagName">Add Your Tags:</label>
                                                         <div class="input-box">
                                                             <input type="text" class="input-text required-entry" name="productTagName" id="productTagName" />
                                                         </div>
                                                         <button type="button" title="Add Tags" class="button" onclick="submitTagForm()">
-                <span>
-                    <span>Add Tags</span>
-                </span>
-            </button>
+                                                            <span>
+                                                                <span>Add Tags</span>
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </form>
                                                 <p class="note">Use spaces to separate tags. Use single quotes (') for phrases.</p>

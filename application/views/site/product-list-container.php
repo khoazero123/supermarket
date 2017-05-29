@@ -1056,7 +1056,7 @@
                                             <strong><span>Categories</span></strong>
                                         </div>
                                         <ul class="nav-accordion">
-                                            <?=$this->mycategory->printNavCategory()?>
+                                            <?=$this->mycategory->printMenuCategory('generateNavHTMLCategories')?>
                                         </ul>
                                         <div class="all-cat"><span>All Categories</span><span style="display:none">Close</span></div>
                                     </div>

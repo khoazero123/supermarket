@@ -1,8 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-function printCategoryTree1() {
-	$CI = & get_instance();
-	///$CI->load->model('Category_model');
-
-	//$categorys = $CI->Category_model->listCategory();
-
+function output_json($response=null) {
+	//$CI = & get_instance();
+	//header('Content-Type: application/json');
+	return json_encode($response,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 }

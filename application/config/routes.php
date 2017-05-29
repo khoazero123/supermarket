@@ -39,6 +39,8 @@ $route['checkout/cart'] = 'cart';
 
 $route['checkout/cart/add/(:num)']['POST'] = 'cart/add/$1';
 $route['checkout/cart/add/uenc/(:any)/product/(:num)/form_key/(:any)'] = 'cart/add/$1';
+
+$route['magicshop/ajax'] = 'cart/addAjax';
 $route['magicshop/ajax/index'] = 'cart/addAjax';
 
 $route['checkout/cart/updatePost']['POST'] = 'cart/update';
@@ -63,7 +65,8 @@ $route['singer'] = 'brand/singer';
 $route['pandora2'] = 'brand/pandora2';
 
 $route['newsletter/subscriber/new']['POST'] = 'newsletter';
-$route['magiccategory/index/ajax'] = 'category/ajax';
+$route['magiccategory/index/ajax'] = 'product/listAjax';
+$route['magiccategory/index/ajax2'] = 'product/listAjax2';
 
 
 $route['sendfriend/product/send/id/(:num)/cat_id/(:num)'] = 'category/ajax';
@@ -72,8 +75,14 @@ $route['tag/index/save/product/(:num)/uenc/(:any)'] = 'category/ajax';
 $route['directory/currency/switch/currency/EUR/uenc/(:any)'] = 'category/ajax';
 
 
-$route['category/(:any).html'] = 'product/list/$1';
-$route['(:any)/(:any).html'] = 'product/view/$1/$2';
+$route['product/(:any)-(:num).html'] = 'product/view/$2';
+
+$route['category/(:any)-(:num).html'] = 'product/list//$2';
+$route['category/(:any).html'] = 'product/list//$1';
+
+$route['(:any)/(:any)-(:num).html'] = 'product/view/$3';
+$route['(:any)/(:any).html'] = 'product/view/$2/$1';
+
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
