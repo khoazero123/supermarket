@@ -18,6 +18,12 @@ $route['customer/account/edit'] = 'account/edit';
 $route['customer/account/editPost']['POST'] = 'account/editPost';
 
 $route['admin'] = 'admin';
+$route['admin/(:any).php'] = 'admin/index/$1';
+//$route['admin/product/add'] = 'admin/addProduct';
+$route['admin/image/upload'] = 'admin/uploadImage';
+//$route['admin/image/delete'] = 'admin/deleteImage';
+$route['admin/image/delete/(:num)'] = 'admin/deleteImage/$1';
+$route['admin/image/update/(:num)'] = 'admin/updateImage/$1';
 
 $route['customer/address'] = 'account/login';
 $route['sales/order/history'] = 'account/login';

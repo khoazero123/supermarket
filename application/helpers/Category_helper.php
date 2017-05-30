@@ -1,8 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
     function printMenuCategory($type='generateMenuHTMLCategories',$current=null) {
+        
         $CI = & get_instance();
         $CI->load->driver('cache', array('adapter' => 'apc', 'backup' => 'file'));
-        $key_cache = 'category-'.$type;
+        $key_cache = 'category-'.$type.$current;
+        $current = explode(',',$current);
         if (!$result = $CI->cache->get($key_cache)) {
             $CI->load->model('Category_model');
 
@@ -61,11 +63,13 @@
         return $html;
     }
 	function generateSelectMenuHTMLCategories($parent, $category,$level=0,$current=null) {
+        //var_dump($current);exit;
         $html = '';
         if (isset($category['parent_cats'][$parent])) {
             foreach ($category['parent_cats'][$parent] as $cat_id) {
                 $prefix = str_repeat('-',$level);
-                $html .= ' <option value="'.$category['categories'][$cat_id]['id'].'">'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
+                //$html .= ' <option value="'.$category['categories'][$cat_id]['id'].'"'.($current==$category['categories'][$cat_id]['id'] ? ' selected' : '').'>'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
+                $html .= ' <option value="'.$category['categories'][$cat_id]['id'].'"'.(in_array($category['categories'][$cat_id]['id'],$current) ? ' selected' : '').'>'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
                 if (isset($category['parent_cats'][$cat_id])) {
                     $html .= generateSelectMenuHTMLCategories($cat_id, $category,$level+1);
                 }

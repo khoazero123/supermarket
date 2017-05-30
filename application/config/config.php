@@ -25,6 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost/fgc/supermarket-MVC/';
 
+$config['upload_dir'] = 'upload/'; // project_folder/upload_dir
+
 $config['fb_appid'] = '582442021872439';
 $config['fb_secret'] = '883570c57cad900d3ff41907e895629a';
 

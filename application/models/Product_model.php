@@ -45,7 +45,7 @@ class Product_model extends CI_Model {
         elseif($id)
             $this->db->where('slug', $id);
         $query = $this->db->get($this->table);
-        if($query) {
+        if($query->num_rows()>0) {
             $result = $query->row_array();
             $id = $result['id'];
             
@@ -58,67 +58,53 @@ class Product_model extends CI_Model {
         }
         return null;
     }
-    public function getImages($id=null,$type=1) {
-        if($id) $this->db->where('product_id', $id);
-        $this->db->where('type', $type);// 1 image normal, 2 image for slide
+    public function getImages($product_id=null,$type=null) {
+        if($product_id) $this->db->where('product_id', $product_id);
+        if($type) $this->db->where('type', $type);// 1 image normal, 2 image for slide
         $query = $this->db->get('image');
         $result = $query->result_array();
         return $result;
     }
-    public function updateUser($data=array(),$id) {
-        $this->db->set($data);
-        if(valid_email($user_id))
-            $this->db->where('email', $id);
-        else
-            $this->db->where('id', $id);
-        if($this->db->update($this->table)) return true;
-        return false; 
-    }
-    public function updateBatchSlug() {
-        $this->db->select("*");
-        $query=$this->db->get($this->table);
-        $result = $query->result_array();
-        foreach ($result as $item) {
-            $string = strtolower($item['name']);
-            $slug = preg_replace('/[^a-zA-Z0-9]/','-',$string);
-            $slug = preg_replace('/-+/','-',$slug);
-            $update[] = array('id'=>$item['id'],'slug'=>$slug);
+
+    public function insertImages($product_id,$images) {
+        $insert = array();
+        foreach ($images as $img) {
+            $insert[] = ['product_id' => $product_id,'url' => $img];
         }
-        if($this->db->update_batch($this->table,$update,'id')) return true;
-        return false; 
-    }
-    public function insertTokenReset($data = array()) {
-        if($this->db->insert($this->table_reset_password, $data)) return $this->db->insert_id();
-        return FALSE;
-    }
-    public function updateTokenReset($data = array()) {
-        if(is_array($id)) $this->db->where($id);
-        else if(is_numeric($id))
-            $this->db->where('id',$id);
-        else
-            $this->db->where('token',$id);
-        
-        if($this->db->update($this->table_reset_password)) return true;
-        return FALSE;
-    }
-    public function getTokenReset($id) {
-        if(is_array($id)) $this->db->where($id);
-        else if(is_numeric($id))
-            $this->db->where('id',$id);
-        else
-            $this->db->where('token',$id);
-        $query = $this->db->get($this->table_reset_password);
-        $result = $query->row_array();
+        if($this->db->insert_batch('image', $insert)) return true;
         return $result;
     }
-    public function insertUser($data = array()) {
-        if($this->db->insert($this->table, $data)) return TRUE;
-        return FALSE;
+    public function insertProduct($data = array()) {
+        if(isset($data['images'])) {
+            $images = $data['images'];
+            unset($data['images']);
+        }
+        if($this->db->insert($this->table, $data)) {
+            $product_id = $this->db->insert_id();
+            if(isset($images)) $this->insertImages($product_id,$images);
+            return $product_id;
+        }
+        return false;
     }
-    public function deleteUser($id) {
-        if(is_array($id)) $this->db->where_in("id",$id);
+
+    public function updateImage($data=array(),$id) {
+        $this->db->set($data);
+        $this->db->where('id', $id);
+        if($this->db->update('image')) return true;
+        return false;
+    }
+    public function updateProduct($data=array(),$id) {
+        $this->db->set($data);
+        $this->db->where('id', $id);
+        if($this->db->update($this->table)) return true;
+        return false;
+    }
+    public function deleteImages($id,$product_id=null) {
+        if($product_id) $this->db->where("product_id",$product_id);
+        elseif(is_array($id)) $this->db->where_in("id",$id);
         else $this->db->where("id",$id);
-        if($this->db->delete($this->table)) return true;
+
+        if($this->db->delete('image')) return true;
         return false;
     }
 }
