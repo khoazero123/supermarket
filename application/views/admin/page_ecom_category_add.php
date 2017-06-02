@@ -27,10 +27,10 @@
                 <a href="page_ecom_order_view.php"><i class="gi gi-shopping_cart"></i> Order View</a>
             </li>
             <li>
-                <a href="page_ecom_products.php"><i class="gi gi-shopping_bag"></i> Products</a>
+                <a href="page_ecom_categorys.php"><i class="gi gi-shopping_bag"></i> Products</a>
             </li>
             <li class="active">
-                <a href="page_ecom_product_edit.php"><i class="gi gi-pencil"></i> Product Edit</a>
+                <a href="page_ecom_category_edit.php"><i class="gi gi-pencil"></i> Product Edit</a>
             </li>
             <li>
                 <a href="page_ecom_customer_view.php"><i class="gi gi-user"></i> Customer View</a>
@@ -51,41 +51,27 @@
                 <!-- END General Data Title -->
 
                 <!-- General Data Content -->
-                <form action="product/page_ecom_product_edit.php?<?=$_SERVER['QUERY_STRING']?>" method="post" class="form-horizontal form-bordered" onsubmit="">
+                <form action="category/page_ecom_category_add.php" method="post" class="form-horizontal form-bordered" onsubmit="">
                     <!-- <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-id">PID</label>
+                        <label class="col-md-3 control-label" for="category-id">PID</label>
                         <div class="col-md-9">
-                            <input type="text" id="product-id" name="product-id" class="form-control" value="6825">
+                            <input type="text" id="category-id" name="category-id" class="form-control" value="6825">
                         </div>
                     </div> -->
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-name">Name</label>
+                        <label class="col-md-3 control-label" for="category-name">Name</label>
                         <div class="col-md-9">
-                            <input type="text" id="product-name" name="product-name" value="<?=@$product['name']?>" class="form-control" placeholder="Enter product name.." required="required">
+                            <input type="text" id="category-name" name="category-name" value="<?=@$category['name']?>" class="form-control" placeholder="Enter category name.." required="required">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-description">Description</label>
-                        <div class="col-md-9">
-                            <!-- CKEditor, you just need to include the plugin (see at the bottom of this page) and add the class 'ckeditor' to your textarea -->
-                            <!-- More info can be found at http://ckeditor.com -->
-                            <textarea id="product-description" name="product-description" class="ckeditor"><?=@$product['description']?></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-short-description">Short Description</label>
-                        <div class="col-md-9">
-                            <textarea id="product-short-description" name="product-short-description" class="form-control" rows="3"><?=@$product['short_description']?></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-category">Category</label>
+                        <label class="col-md-3 control-label" for="category-category">Category parent</label>
                         <div class="col-md-8">
                             <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                            <select id="product-category" name="product-category" class="select-chosen" data-placeholder="Choose Category.." style="width: 250px;">
+                            <select id="category-category" name="category-category" class="select-chosen" data-placeholder="Choose Category.." style="width: 250px;">
                                 <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
                                 <?php 
-                                echo printMenuCategory('generateSelectMenuHTMLCategories',$product['category_id']);
+                                echo printMenuCategory('generateSelectMenuHTMLCategories');
                                 /*foreach ($categorys as $category) {
                                     echo '<option value="'.$category['id'].'">'.$category['name'].'</option>';
                                 }*/
@@ -94,30 +80,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-price">Price</label>
-                        <div class="col-md-8">
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-usd"></i></div>
-                                <input type="text" id="product-price" name="product-price" value="<?=@$product['price']?>" class="form-control" placeholder="0,00">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-3 control-label">Condition</label>
-                        <div class="col-md-9">
-                            <label class="radio-inline" for="product-condition-new">
-                                <input type="radio" id="product-condition-new" name="product-condition" value="100" checked> New 100%
-                            </label>
-                            <label class="radio-inline" for="product-condition-used">
-                                <input type="radio" id="product-condition-used" name="product-condition" value="99"> Used
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label class="col-md-3 control-label">Published?</label>
                         <div class="col-md-9">
                             <label class="switch switch-primary">
-                                <input type="checkbox" id="product-status" name="product-status"<?=(@$product['display']==1 ? ' checked' : '')?>><span></span>
+                                <input type="checkbox" id="category-status" name="category-status" checked><span></span>
                             </label>
                         </div>
                     </div>
@@ -138,24 +104,24 @@
                 <div class="block-title">
                     <h2><i class="fa fa-google"></i> <strong>Meta</strong> Data</h2>
                 </div>
-                <form action="page_ecom_product_edit.php" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                <form action="page_ecom_category_edit.php" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-meta-title">Meta Title</label>
+                        <label class="col-md-3 control-label" for="category-meta-title">Meta Title</label>
                         <div class="col-md-9">
-                            <input type="text" id="product-meta-title" name="product-meta-title" class="form-control" placeholder="Enter meta title..">
+                            <input type="text" id="category-meta-title" name="category-meta-title" class="form-control" placeholder="Enter meta title..">
                             <div class="help-block">55 Characters Max</div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-meta-keywords">Meta Keywords</label>
+                        <label class="col-md-3 control-label" for="category-meta-keywords">Meta Keywords</label>
                         <div class="col-md-9">
-                            <input type="text" id="product-meta-keywords" name="product-meta-keywords" class="form-control" placeholder="keyword1, keyword2, keyword3">
+                            <input type="text" id="category-meta-keywords" name="category-meta-keywords" class="form-control" placeholder="keyword1, keyword2, keyword3">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label" for="product-meta-description">Meta Description</label>
+                        <label class="col-md-3 control-label" for="category-meta-description">Meta Description</label>
                         <div class="col-md-9">
-                            <textarea id="product-meta-description" name="product-meta-description" class="form-control" rows="6" placeholder="Enter meta description.."></textarea>
+                            <textarea id="category-meta-description" name="category-meta-description" class="form-control" rows="6" placeholder="Enter meta description.."></textarea>
                             <div class="help-block">115 Characters Max</div>
                         </div>
                     </div>
@@ -173,44 +139,14 @@
             <div class="block">
                 <!-- Product Images Title -->
                 <div class="block-title">
-                    <h2><i class="fa fa-picture-o"></i> <strong>Product</strong> Upload Images</h2>
+                    <h2><i class="fa fa-picture-o"></i> <strong>Category</strong> Images</h2>
                 </div>
                 <!-- END Product Images Title -->
-
                 <!-- Product Images Content -->
                 <div class="block-section">
                     <!-- Dropzone.js, You can check out https://github.com/enyo/dropzone/wiki for usage examples -->
-                    <form action="product/image/upload?<?=$_SERVER['QUERY_STRING']?>" class="dropzone"></form>
+                    <form action="category/image/upload" class="dropzone"></form>
                 </div>
-                <table class="table table-bordered table-striped table-vcenter">
-                    <tbody>
-                    <?php 
-                    foreach ($product['images'] as $image) {
-                        echo '<tr id="image-'.$image['id'].'" data-id="'.$image['id'].'">
-                            <td style="width: 20%;">
-                                <a href="'.base_url().$image['url'].'" data-toggle="lightbox-image">
-                                    <img src="'.base_url().$image['url'].'" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                </a>
-                            </td>
-                            <td class="text-center">
-                                <label class="switch switch-primary">
-                                    <input type="checkbox" name="display-'.$image['id'].'"'.($image['display']==1 ? ' checked' : '').'><span></span>
-                                </label>
-                                Display
-                            </td>
-                            <td class="text-center">
-                                <select name="type" class="form-control" data-placeholder="Type image">
-                                <option value="1"'.($image['type']==1 ? ' selected' : '').'>Normal</option>
-                                <option value="2"'.($image['type']==2 ? ' selected' : '').'>Slide</option>
-                            </td>
-                            <td class="text-center">
-                                <a href="javascript:deleteImage('.$image['id'].')" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                            </td>
-                        </tr>';
-                        } ?>
-                        
-                    </tbody>
-                </table>
                 <!-- END Product Images Content -->
             </div>
             <!-- END Product Images Block -->
@@ -227,7 +163,7 @@
         $('select[name=type]').on('change', function (e) {
             var id = $(this).parents('tr').data("id");
             var type = this.value;
-            $.post('product/image/update/'+id, {data:{type:type}}, function(data) {
+            $.post('category/image/update/'+id, {data:{type:type}}, function(data) {
                 //$('tr#image-'+id).hide();
                 console.log(data);
             });
@@ -238,7 +174,7 @@
             checkBoxes.attr("checked", !checkBoxes.attr("checked"));
             var display = $(this).is(':checked');
             console.log(display);
-            $.post('product/image/update/'+id, {data:{display:+display}}, function(data) {
+            $.post('image/update/'+id, {data:{display:+display}}, function(data) {
                 //$('tr#image-'+id).hide();
                 console.log(data);
             });
@@ -256,7 +192,7 @@
 
     });
     function deleteImage(id) {
-        $.post('product/image/delete/'+id, {}, function(data) {
+        $.post('category/image/delete/'+id, {}, function(data) {
             $('tr#image-'+id).hide();
             console.log(data);
         });

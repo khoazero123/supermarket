@@ -10,12 +10,12 @@
 
 /* Template variables */
 $template = array(
-    'name'              => 'ProUI',
+    'name'              => 'Administrator',
     'version'           => '3.7',
     'author'            => 'pixelcave',
     'robots'            => 'noindex, nofollow',
-    'title'             => 'ProUI - Responsive Bootstrap Admin Template',
-    'description'       => 'ProUI is a Responsive Bootstrap Admin Template created by pixelcave and published on Themeforest.',
+    'title'             => 'Administrator',
+    'description'       => 'Administrator',
     // true                     enable page preloader
     // false                    disable page preloader
     'page_preloader'    => false,
@@ -63,63 +63,28 @@ $template = array(
 /* Primary navigation array (the primary navigation will be created automatically based on this array, up to 3 levels deep) */
 $primary_nav = array(
     array(
-        'name'  => 'Dashboard',
-        'icon'  => 'gi gi-shopping_cart',
-        'sub'   => array(
-            array(
-                'name'  => 'Overview',
-                'url'   => 'index.php'
-            ),
-            array(
-                'name'  => 'Products',
-                'url'   => 'page_ecom_products.php'
-            ),
-            array(
-                'name'  => 'Product Add',
-                'url'   => 'page_ecom_product_add.php'
-            ),
-            array(
-                'name'  => 'Product Edit',
-                'url'   => 'page_ecom_product_edit.php'
-            ),
-            array(
-                'name'  => 'Orders',
-                'url'   => 'page_ecom_orders.php'
-            ),
-            array(
-                'name'  => 'Order View',
-                'url'   => 'page_ecom_order_view.php'
-            ),
-            array(
-                'name'  => 'Customer View',
-                'url'   => 'page_ecom_customer_view.php'
-            )
-        )
-    ),
-    array(
-        'name'  => 'Widget Kit',
-        'opt'   => '<a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a>' .
-                   '<a href="javascript:void(0)" data-toggle="tooltip" title="Create the most amazing pages with the widget kit!"><i class="gi gi-lightbulb"></i></a>',
+        'name'  => 'Options',
+        'opt'   => '<a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a>',
         'url'   => 'header',
     ),
     array(
-        'name'  => 'Statistics',
-        'url'   => 'page_widgets_stats.php',
+        'name'  => 'List Products',
+        'url'   => 'product/page_ecom_products.php',
         'icon'  => 'gi gi-charts'
     ),
     array(
-        'name'  => 'Social',
-        'url'   => 'page_widgets_social.php',
+        'name'  => 'Add Product',
+        'url'   => 'product/page_ecom_product_add.php',
         'icon'  => 'gi gi-share_alt'
     ),
     array(
-        'name'  => 'Media',
-        'url'   => 'page_widgets_media.php',
+        'name'  => 'List Categorys',
+        'url'   => 'category/page_ecom_categorys.php',
         'icon'  => 'gi gi-film'
     ),
     array(
-        'name'  => 'Links',
-        'url'   => 'page_widgets_links.php',
+        'name'  => 'Add Category',
+        'url'   => 'category/page_ecom_category_add.php',
         'icon'  => 'gi gi-link'
     ),
     array(

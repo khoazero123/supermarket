@@ -32,33 +32,18 @@
     <!-- Quick Stats -->
     <div class="row text-center">
         <div class="col-sm-6 col-lg-3">
-            <a href="product/page_ecom_product_add.php" class="widget widget-hover-effect2">
+            <a href="category/page_ecom_category_add.php" class="widget widget-hover-effect2">
                 <div class="widget-extra themed-background-success">
-                    <h4 class="widget-content-light"><strong>Add New</strong> Product</h4>
+                    <h4 class="widget-content-light"><strong>Add New</strong> Category</h4>
                 </div>
                 <div class="widget-extra-full"><span class="h2 text-success animation-expandOpen"><i class="fa fa-plus"></i></span></div>
             </a>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                <div class="widget-extra themed-background-danger">
-                    <h4 class="widget-content-light"><strong>Out of</strong> Stock</h4>
-                </div>
-                <div class="widget-extra-full"><span class="h2 text-danger animation-expandOpen">71</span></div>
-            </a>
-        </div>
+
         <div class="col-sm-6 col-lg-3">
             <a href="javascript:void(0)" class="widget widget-hover-effect2">
                 <div class="widget-extra themed-background-dark">
-                    <h4 class="widget-content-light"><strong>Top</strong> Sellers</h4>
-                </div>
-                <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">20</span></div>
-            </a>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                <div class="widget-extra themed-background-dark">
-                    <h4 class="widget-content-light"><strong>All</strong> Products</h4>
+                    <h4 class="widget-content-light"><strong>All</strong> Categorys</h4>
                 </div>
                 <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">4.982</span></div>
             </a>
@@ -82,31 +67,33 @@
             <thead>
                 <tr>
                     <th class="text-center" style="width: 70px;">ID</th>
-                    <th>Product Name</th>
-                    <th class="text-right hidden-xs">Price</th>
+                    <th>Category Name</th>
+                    <th class="text-right hidden-xs">Parent</th>
                     <th class="hidden-xs">Status</th>
-                    <th class="hidden-xs text-center">Added</th>
+                    <th class="hidden-xs text-center">Image</th>
                     <th class="text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <?php 
-                //for($i=99; $i>39; $i--) {
-                foreach ($products as $item) {
+                //echo printMenuCategory('generateSelectAdminHTMLCategories');
+                //exit;
+                //if(false)
+                foreach ($categorys as $item) {
                     echo '<tr id="product-'.$item['id'].'" data-id="'.$item['id'].'">
-                    <td class="text-center"><a href="product/page_ecom_product_edit.php?id='.$item['id'].'"><strong>ID#'.$item['id'].'</strong></a></td>
-                    <td><a href="product/page_ecom_product_edit.php?id='.$item['id'].'">'.$item['name'].'</a></td>
-                    <td class="text-right hidden-xs"><strong>$'.$item['price'].'</strong></td>
+                    <td class="text-center"><a href="category/page_ecom_category_edit.php?id='.$item['id'].'"><strong>ID#'.$item['id'].'</strong></a></td>
+                    <td><a href="category/page_ecom_category_edit.php?id='.$item['id'].'">'.$item['name'].'</a></td>
+                    <td class="text-right hidden-xs"><strong>HTC</strong></td>
                     <td class="hidden-xs">';
-                    if($item['quantity']<1)
-                        echo '<span class="label label-danger">Out of Stock</span>';
+                    if($item['display']==0)
+                        echo '<span class="label label-danger">Hide</span>';
                     else
-                        echo '<span class="label label-success">Available (' . $item['quantity'].')</span>';
+                        echo '<span class="label label-success">Display</span>';
                     echo '</td>
-                    <td class="hidden-xs text-center">'.$item['created_at'].'</td>
+                    <td class="hidden-xs text-center"><img src="'.$item['image'].'" /></td>
                     <td class="text-center">
                         <div class="btn-group btn-group-xs">
-                            <a target="_blank" href="product/page_ecom_product_edit.php?id='.$item['id'].'" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                            <a target="_blank" href="category/page_ecom_category_edit.php?id='.$item['id'].'" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                             <a href="javascript:deleteProduct('.$item['id'].')" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                         </div>
                     </td>

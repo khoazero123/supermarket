@@ -13,7 +13,7 @@ class Product_model extends CI_Model {
      * @param  string $param : col=value         asc | desc | category_id
      * @return [type]        [description]
      */
-    public function listProduct($query) {
+    public function listProduct($query=null) {
         if(isset($query['type'])) switch ($type) {
             case 'newest':
                 $this->db->order_by("updated_at desc");
@@ -97,6 +97,15 @@ class Product_model extends CI_Model {
         $this->db->set($data);
         $this->db->where('id', $id);
         if($this->db->update($this->table)) return true;
+        return false;
+    }
+    public function deleteProduct($id) {
+        if(is_array($id)) $this->db->where_in("id",$id);
+        else $this->db->where("id",$id);
+        //else
+        //else $this->db->where("id",$id);
+
+        if($this->db->delete($this->table)) return true;
         return false;
     }
     public function deleteImages($id,$product_id=null) {

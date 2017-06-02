@@ -17,13 +17,20 @@ $route['customer/account/logoutSuccess'] = 'account/logout';
 $route['customer/account/edit'] = 'account/edit';
 $route['customer/account/editPost']['POST'] = 'account/editPost';
 
-$route['admin'] = 'admin';
-$route['admin/(:any).php'] = 'admin/index/$1';
-//$route['admin/product/add'] = 'admin/addProduct';
-$route['admin/image/upload'] = 'admin/uploadImage';
-//$route['admin/image/delete'] = 'admin/deleteImage';
-$route['admin/image/delete/(:num)'] = 'admin/deleteImage/$1';
-$route['admin/image/update/(:num)'] = 'admin/updateImage/$1';
+$route['admin'] = 'Admin/Product';
+$route['admin/product'] = 'Admin/Product';
+$route['admin/product/(:any).php'] = 'Admin/Product/index/$1';
+$route['admin/product/delete/(:num)'] = 'Admin/Product/deleteProduct/$1';
+$route['admin/product/image/upload'] = 'Admin/Product/uploadImage';
+$route['admin/product/image/delete/(:num)'] = 'Admin/Product/deleteImage/$1';
+$route['admin/product/image/update/(:num)'] = 'Admin/Product/updateImage/$1';
+
+
+$route['admin/category'] = 'Admin/Category';
+$route['admin/category/(:any).php'] = 'Admin/Category/index/$1';
+$route['admin/category/image/upload'] = 'Admin/Category/uploadImage';
+$route['admin/category/image/delete/(:num)'] = 'Admin/Category/deleteImage/$1';
+
 
 $route['customer/address'] = 'account/login';
 $route['sales/order/history'] = 'account/login';

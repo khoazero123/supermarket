@@ -7,10 +7,10 @@ class Category_model extends CI_Model {
         $this->table = 'category';
     }
     public function listCategory() {
-        //exit;
-        $this->db->select("*");
-        $query=$this->db->get($this->table);
-        $result = $query->result_array();
+        //$this->db->select("*");
+        $this->db->order_by("name asc");
+        $query = $this->db->get($this->table);
+        $result = $query->result_array(); 
         return $result;
     }
 
@@ -41,12 +41,9 @@ class Category_model extends CI_Model {
         $result = $query->result_array();
         return $result;
     }
-    public function updateUser($data=array(),$id) {
+    public function updateCategory($data=array(),$id) {
         $this->db->set($data);
-        if(valid_email($user_id))
-            $this->db->where('email', $id);
-        else
-            $this->db->where('id', $id);
+        $this->db->where('id', $id);
         if($this->db->update($this->table)) return true;
         return false; 
     }
@@ -65,7 +62,7 @@ class Category_model extends CI_Model {
     }
     public function insertTokenReset($data = array()) {
         if($this->db->insert($this->table_reset_password, $data)) return $this->db->insert_id();
-        return FALSE;
+        return false;
     }
     public function updateTokenReset($data = array()) {
         if(is_array($id)) $this->db->where($id);
@@ -75,7 +72,7 @@ class Category_model extends CI_Model {
             $this->db->where('token',$id);
         
         if($this->db->update($this->table_reset_password)) return true;
-        return FALSE;
+        return false;
     }
     public function getTokenReset($id) {
         if(is_array($id)) $this->db->where($id);
@@ -87,9 +84,9 @@ class Category_model extends CI_Model {
         $result = $query->row_array();
         return $result;
     }
-    public function insertUser($data = array()) {
-        if($this->db->insert($this->table, $data)) return TRUE;
-        return FALSE;
+    public function insertCategory($data = array()) {
+        if($this->db->insert($this->table, $data)) return true;
+        return false;
     }
     public function deleteUser($id) {
         if(is_array($id)) $this->db->where_in("id",$id);

@@ -4,7 +4,9 @@
         $CI = & get_instance();
         $CI->load->driver('cache', array('adapter' => 'apc', 'backup' => 'file'));
         $key_cache = 'category-'.$type.$current;
+        //echo $current."\n";
         $current = explode(',',$current);
+        //var_dump($current);exit;
         if (!$result = $CI->cache->get($key_cache)) {
             $CI->load->model('Category_model');
 
@@ -33,7 +35,7 @@
                             </a>';
                 if (isset($category['parent_cats'][$cat_id])) {
                     $html .= '<ul class="level'.$level.'">'."\n";
-                    $html .= generateMenuHTMLCategories($cat_id, $category,$level+1);
+                    $html .= generateMenuHTMLCategories($cat_id, $category,$level+1,$current);
                     $html .= '</ul>'."\n";
                 }
                 $html .= '</li>'."\n";
@@ -53,7 +55,7 @@
                             </a>';
                 if (isset($category['parent_cats'][$cat_id])) {
                     $html .= '<ul class="level'.$level.'">'."\n";
-                    $html .= generateNavHTMLCategories($cat_id, $category,$level+1);
+                    $html .= generateNavHTMLCategories($cat_id, $category,$level+1,$current);
                     $html .= '</ul>'."\n";
                 }
                 $html .= '</li>'."\n";
@@ -69,9 +71,10 @@
             foreach ($category['parent_cats'][$parent] as $cat_id) {
                 $prefix = str_repeat('-',$level);
                 //$html .= ' <option value="'.$category['categories'][$cat_id]['id'].'"'.($current==$category['categories'][$cat_id]['id'] ? ' selected' : '').'>'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
-                $html .= ' <option value="'.$category['categories'][$cat_id]['id'].'"'.(in_array($category['categories'][$cat_id]['id'],$current) ? ' selected' : '').'>'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
+                //$html .= '<!-- '.$category['categories'][$cat_id]['id'].' : '. $current[0] .' -->'."\n";
+                $html .= ' <option value="'.$category['categories'][$cat_id]['id'].'"'.($current && in_array($category['categories'][$cat_id]['id'],$current) ? ' selected' : '').'>'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
                 if (isset($category['parent_cats'][$cat_id])) {
-                    $html .= generateSelectMenuHTMLCategories($cat_id, $category,$level+1);
+                    $html .= generateSelectMenuHTMLCategories($cat_id, $category,$level+1,$current);
                 }
             }
         }
@@ -89,7 +92,7 @@
                             </a>';
                 if (isset($category['parent_cats'][$cat_id])) {
                     $html .= '<ul class="level'.$level.'">'."\n";
-                    $html .= generateMenuMobileHTMLCategories($cat_id, $category,$level+1);
+                    $html .= generateMenuMobileHTMLCategories($cat_id, $category,$level+1,$current);
                     $html .= '</ul>'."\n";
                 }
                 $html .= '</li>'."\n";
@@ -97,26 +100,35 @@
         }
         return $html;
     }
-/*
-<li class="level0"><a class="level-top" href="automovie-motorcyle.html"><img class="img-responsive" alt="Automovie & Motorcyle" src="http://alothemes.com/demo/supermarket/media/catalog/category//06.png"><span>Automovie & Motorcyle</span><span class="boder-menu"></span></a></li>
-<li class="level0"><a class="level-top" href="electronics.html"><img class="img-responsive" alt="Electronics" src="http://alothemes.com/demo/supermarket/media/catalog/category//01.png"><span>Electronics</span><span class="boder-menu"></span></a>
-    <ul class="level0">
-        <li class="level1 hasChild"><a href="electronics/accessories.html"><span>Accessories</span></a>
-            <ul class="level1">
-                <li class="level2"><a href="electronics/accessories/mobile.html"><span>Mobile</span></a>
-                </li>
-                <li class="level2"><a href="electronics/accessories/tablets.html"><span>Tablets</span></a>
-                </li>
-                <li class="level2"><a href="electronics/accessories/memory-cards.html"><span>Memory Cards</span></a>
-                </li>
-            </ul>
-        </li>
-        <li class="level1"><a href="electronics/swimming.html"><span>Swimming</span></a>
-        </li>
-        <li class="level1"><a href="electronics/computers-networking.html"><span>Computers & Networking</span></a>
-        </li>
-        <li class="level1"><a href="electronics/flashlights-lamps.html"><span>Flashlights & Lamps</span></a>
-        </li>
-    </ul>
-</li>
- */
+    function generateSelectAdminHTMLCategories($parent, $category,$level=0,$current=null) {
+        $html = '';
+        if (isset($category['parent_cats'][$parent])) {
+            foreach ($category['parent_cats'][$parent] as $cat_id) {
+                $prefix = str_repeat('-',$level);
+                //$html .= ' <option value="'.$category['categories'][$cat_id]['id'].'"'.($current && in_array($category['categories'][$cat_id]['id'],$current) ? ' selected' : '').'>'.$prefix.$category['categories'][$cat_id]['name'].'</option>'."\n";
+                $html .= '<tr id="product-'.$category['categories'][$cat_id]['id'].'" data-id="'.$category['categories'][$cat_id]['id'].'">
+                    <td class="text-center"><a href="category/page_ecom_category_edit.php?id='.$category['categories'][$cat_id]['id'].'"><strong>ID#'.$category['categories'][$cat_id]['id'].'</strong></a></td>
+                    <td><a href="category/page_ecom_category_edit.php?id='.$category['categories'][$cat_id]['id'].'">'.$prefix.$category['categories'][$cat_id]['name'].'</a></td>
+                    <td class="text-right hidden-xs"><strong>HTC</strong></td>
+                    <td class="hidden-xs">';
+                    if($category['categories'][$cat_id]['display']==0)
+                        $html .= '<span class="label label-danger">Hide</span>';
+                    else
+                        $html .= '<span class="label label-success">Display</span>';
+                    $html .= '</td>
+                    <td class="hidden-xs text-center"><img src="" /></td>
+                    <td class="text-center">
+                        <div class="btn-group btn-group-xs">
+                            <a target="_blank" href="category/page_ecom_category_edit.php?id='.$category['categories'][$cat_id]['id'].'" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                            <a href="javascript:deleteProduct('.$category['categories'][$cat_id]['id'].')" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                        </div>
+                    </td>
+                </tr>'."\n";
+
+                if (isset($category['parent_cats'][$cat_id])) {
+                    $html .= generateSelectMenuHTMLCategories($cat_id, $category,$level+1,$current);
+                }
+            }
+        }
+        return $html;
+    }
